@@ -1,0 +1,217 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\begin{document}
+\title{Mini-Homework 3}
+\author{Will Boland}
+\maketitle
+
+\textbf{Question 1}\newline
+A) \textbf{Claim: } (W$\wedge$X)$\rightarrow$$\neg$Y, X $\vdash$ $\neg$(W$\wedge$Y). \newline\newline
+\textbf{\textit{Proof: }}\newline
+Let (W$\wedge$X)$\rightarrow$$\neg$Y and X be true.\newline
+|	Assume that W$\wedge$Y is true (will show a contradiction)\newline
+|	W$\wedge$Y implies W and Y. ($\wedge$-elimination)\newline
+|	From X and Y, W$\wedge$X ($\wedge$-elimination)\newline
+|	Since (W$\wedge$X)$\rightarrow$$\neg$Y and W$\wedge$X, $\neg$Y. ($\rightarrow$-elimination)\newline
+Assuming W$\wedge$Y, we proved Y and $\neg$Y, which contradict eachother, and therefore $\neg$(W$\wedge$Y) (Contradiciton) $\square$\newline\rule{10cm}{1pt}\newline
+
+
+
+B) \textbf{Claim: } $\vdash$ (M$\rightarrow$$\neg$N)$\rightarrow$$\neg$(M$\wedge$N)\newline
+
+\textbf{\textit{Proof: }}\newline
+|	Assume that M$\wedge$N and M$\rightarrow$$\neg$N is true (will show a contradiction)\newline
+|	From M$\wedge$N, M and N. ($\wedge$-elimination)\newline
+|	Since M$\rightarrow$$\neg$N and M, $\neg$N.
+|	Since (M$\rightarrow$$\neg$N)$\rightarrow$$\neg$(M$\wedge$N) and M$\rightarrow$$\neg$N, $\neg$(M$\wedge$N). ($\rightarrow$-elimination)\newline
+Asssuming  M$\wedge$N and M$\rightarrow$$\neg$N, we proved N and $\neg$N, which contradict eachother, and therefore $\neg$(M$\wedge$N) (Contradiction)$\square$\newline\rule{10cm}{1pt}\newline
+
+
+
+C) \textbf{Claim: } Z$\rightarrow$A, $\neg$A $\vdash$ $\neg$Z\newline
+
+\textbf{\textit{Proof: }}\newline
+Assume Z$\rightarrow$A, $\neg$A.\newline
+|	Assume that Z is true (to show a contradiction)\newline
+|	Z$\rightarrow$A and Z, so A ($\rightarrow$-elimination)\newline
+Assuming Z, we proved A and had (under the assumption) $\neg$A, which contradict eachother, and therefore $\neg$Z. (Contadiction) $\square$\newline\rule{10cm}{1pt}\newline
+
+
+
+D) \textbf{Claim: } Z$\rightarrow$A, B$\rightarrow$A, $\neg$A $\vdash$ $\neg$Z$\wedge$$\neg$B\newline
+
+\textbf{\textit{Proof: }}\newline
+Assume Z$\rightarrow$A, B$\rightarrow$A, $\neg$A.\newline
+|	Assume that Z and B are true (to show a contradiction)\newline
+|	From Z and B, Z$\wedge$B
+|	Z$\rightarrow$A and Z, A. ($\rightarrow$-elimination)\newline
+|	B$\rightarrow$A and B, A. ($\rightarrow$-elimination)\newline
+Assuming Z and B, we proved A and had $\neg$A, which contradict eachother, and therefore $\neg$Z$\wedge$$\neg$B (Contradiction) $\square$\newline\rule{10cm}{1pt}\newline
+
+
+
+E) \textbf{Claim: } P$\lor$(Q$\wedge$$\neg$$\neg$R), P$\rightarrow$R $\vdash$ R\newline
+
+\textbf{\textit{Proof: }}\newline
+Assume P$\lor$(Q$\wedge$$\neg$$\neg$R), P$\rightarrow$R\newline
+|	\textbf{Case 1: } Assume P\newline
+|	P$\rightarrow$R and P, R ($\rightarrow$-elimination)\newline
+|	\textbf{Case 2: } Assume Q$\wedge$$\neg$$\neg$R\newline
+|	From Q$\wedge$$\neg$$\neg$R, $\neg$$\neg$R ($\wedge$-elimination)\newline
+|	From $\neg$$\neg$R, R (Double-negation)\newline
+Under both assumptions (P and Q$\wedge$$\neg$$\neg$R) we proved R. Therefore R. (Cases)$\square$\newline\rule{10cm}{1pt}\newline
+
+
+
+F) \textbf{Claim: } (F$\wedge$G)$\lor$(H$\rightarrow$I), H $\vdash$ G$\lor$I\newline
+
+\textbf{\textit{Proof: }}\newline
+Assume (F$\wedge$G)$\lor$(H$\rightarrow$I), H.\newline
+|	\textbf{Case 1: } Assume F$\wedge$G\newline
+|	F$\wedge$G, so F and G. ($\wedge$-elimination)\newline
+|	From G, G$\lor$I ($\lor$-introduction)\newline
+|	\textbf{Case 2: } Assume H$\rightarrow$I\newline
+|	H$\rightarrow$I and H, I $\rightarrow$-elimination\newline
+|	From I, G$\lor$I ($\lor$-introduction)\newline
+Under both assumptions (F$\wedge$G and H$\rightarrow$I) we proved G$\lor$I, therefore G$\lor$I (Cases)$\square$\newline\rule{10cm}{1pt}\newline
+
+
+
+G) \textbf{Claim: } J$\rightarrow$K $\vdash$ (J$\lor$$\neg$$\neg$K)$\rightarrow$K\newline
+
+\textbf{\textit{Proof: }}\newline
+Assume J$\rightarrow$K.\newline
+|	Assume J$\lor$$\neg$$\neg$K\newline
+||		\textbf{Case 1: } Assume J\newline
+||		J$\rightarrow$K and J, K ($\rightarrow$-elimination)\newline
+||		\textbf{Case 2: } Assume $\neg$$\neg$K\newline
+||		$\neg$$\neg$K, K (Double negation)\newline
+|	In either case of J$\lor$$\neg$$\neg$K, K is true. (cases)\newline
+From J$\rightarrow$K, we proved K, and therefore J$\rightarrow$K $\vdash$ (J$\lor$$\neg$$\neg$K)$\rightarrow$K (Direct proof)$\square$\newline\rule{10cm}{1pt}\newline
+
+
+
+H) \textbf{Claim: } (A$\wedge$C)$\rightarrow$D, A$\wedge$$\neg$B $\vdash$ $\neg$(A$\rightarrow$B)$\wedge$(C$\rightarrow$D)\newline
+
+\textbf{\textit{Proof: }}\newline
+Assume (A$\wedge$C)$\rightarrow$D, A$\wedge$$\neg$B\newline
+From A$\wedge$$\neg$B, A and $\neg$B ($\wedge$-elimination)\newline
+|	Assume A$\rightarrow$B (to show a contradiction)\newline
+|	A$\rightarrow$B and A, B. ($\rightarrow$-elimination)\newline
+Assuming A$\rightarrow$B we proved B and $\neg$B, which contradict eachothere, and therefore $\neg$(A$\rightarrow$B) (Contradiction)\newline
+|	Assume A$\wedge$C\newline
+|	A$\wedge$C, so C ($\wedge$-elimination)\newline
+|	Due to (A$\wedge$C)$\rightarrow$D and C from A$\wedge$C, C$\rightarrow$D and C, so D. ($\rightarrow$-elimination)\newline
+$\neg$(A$\rightarrow$B) and C$\rightarrow$D, so $\neg$(A$\rightarrow$B)$\wedge$C$\rightarrow$D ($\wedge$-introduction)$\square$\newline\rule{10cm}{1pt}\newline
+
+
+
+\textbf{Question 2} (Assuming that word phrasing is correct)\newline
+A) Line 2 is wrong because you need to do proof by cases.\newline
+B) Correct \newline
+C) Correct\newline
+D) Correct \newline
+E) Line 2 is incorrect: Need to assume A$\lor$$\neg$B before proof by cases due to it all connecting by $\rightarrow$.\newline
+F) Line 9 is incorrect: K was never used to prove J, it was the double negation after assuming $\neg$$\neg$J that proved J.\newline\newline
+
+\textbf{Question 3: }\newline
+A) \textbf{Claim: } A$\rightarrow$(B$\wedge$C) $\vdash$ (A$\rightarrow$B)$\wedge$(A$\rightarrow$C)\newline
+
+\textbf{\textit{Proof: }}\newline
+Assume A$\rightarrow$(B$\wedge$C).\newline
+|	Assume A\newline
+|	Since A$\rightarrow$(B$\wedge$C) and A, B$\wedge$C ($\rightarrow$-elimination)\newline
+|	Since B$\wedge$C, B and C ($\wedge$-elimination)\newline
+Assuming A, we proved B and C, so A$\rightarrow$B and A$\rightarrow$C (Direct Proof)\newline
+A$\rightarrow$B and A$\rightarrow$C, so A$\rightarrow$B$\wedge$A$\rightarrow$C ($\wedge$-introduction)$\square$\newline\rule{10cm}{1pt}\newline
+
+\textbf{Claim: } (A$\rightarrow$B)$\wedge$(A$\rightarrow$C) $\vdash$ A$\rightarrow$(B$\wedge$C)\newline
+
+\textbf{\textit{Proof: }}\newline
+Assume (A$\rightarrow$B)$\wedge$(A$\rightarrow$C).\newline
+From (A$\rightarrow$B)$\wedge$(A$\rightarrow$C), (A$\rightarrow$B) and (A$\rightarrow$C).\newline
+|	Assume A.\newline
+|	(A$\rightarrow$B) and A, B ($\rightarrow$-elimination)\newline
+|	(A$\rightarrow$C) and A, C ($\rightarrow$-elimination)\newline
+|	From B and C, B$\wedge$C ($\wedge$-introduction)\newline
+Assuming A, we proved B$\wedge$C, therefore A$\rightarrow$(B$\wedge$C) (Direct Proof)$\square$\newline\rule{10cm}{1pt}\newline
+
+B) \textbf{Claim: } A$\rightarrow$(B$\wedge$C) $\equiv$ (A$\rightarrow$B)$\wedge$(A$\rightarrow$C)\newline
+
+\textbf{\textit{Proof: }}\newline
+A$\rightarrow$(B$\wedge$C) $\equiv$ $\neg$A$\lor$(B$\wedge$C) (Implication)\newline
+$\equiv$ ($\neg$A$\lor$B)$\wedge$($\neg$A$\lor$C) ($\lor$ Distributive)\newline
+$\equiv$ (A$\rightarrow$B)$\wedge$(A$\neg$$\lor$C) (Implication)\newline
+$\equiv$ (A$\rightarrow$B)$\wedge$(A$\rightarrow$C) (Implication)$\square$\newline\rule{10cm}{1pt}\newline
+
+
+
+\textbf{Question 4}\newline
+A) \textbf{Claim: } A$\rightarrow$(B$\wedge$C) $\equiv$ (A$\rightarrow$B)$\wedge$(A$\rightarrow$C)\newline
+
+\textbf{\textit{Proof: }}\newline
+A$\rightarrow$(B$\wedge$C) $\equiv$ $\neg$A$\lor$(B$\wedge$C) (Implication)\newline
+$\equiv$ ($\neg$A$\lor$B)$\wedge$($\neg$A$\lor$C) ($\lor$ Distributive)\newline
+$\equiv$ (A$\rightarrow$B)$\wedge$(A$\neg$$\lor$C) (Implication)\newline
+$\equiv$ (A$\rightarrow$B)$\wedge$(A$\rightarrow$C) (Implication)$\square$\newline\rule{10cm}{1pt}\newline
+
+
+
+B) Not Equal. (A=T, B=F, C=F)\newline\newline
+
+C) \textbf{Claim: } (A$\rightarrow$B)$\rightarrow$C $\equiv$ ($\neg$A$\rightarrow$C)$\wedge$(B$\rightarrow$C)\newline
+
+\textbf{\textit{Proof: }}\newline
+(A$\rightarrow$B)$\rightarrow$C $\equiv$ ($\neg$A$\lor$B)$\rightarrow$C (Implication)\newline
+$\equiv$ $\neg$($\neg$A$\lor$B)$\lor$C (Implication)\newline
+$\equiv$ ($\neg$$\neg$A$\wedge$$\neg$B)$\lor$C (DeMorgan's)\newline
+$\equiv$ C$\lor$($\neg$$\neg$A$\wedge$$\neg$B) ($\lor$-Commutative)\newline
+$\equiv$ C$\lor$(A$\wedge$$\neg$B) (Double negation)\newline
+$\equiv$ (C$\lor$A)$\wedge$(C$\lor$$\neg$B) ($\lor$-Distribution)\newline
+$\equiv$ (A$\lor$C)$\wedge$(C$\lor$$\neg$B) ($\lor$-commutative)\newline
+$\equiv$ (A$\lor$C)$\wedge$($\neg$B$\lor$C)($\lor$-commutative)\newline
+$\equiv$ ($\neg$A$\rightarrow$C)$\wedge$($\neg$B$\lor$C) (Implication)\newline
+$\equiv$ ($\neg$A$\rightarrow$C)$\wedge$(B$\rightarrow$C) (Implication)$\square$\newline\rule{10cm}{1pt}\newline
+
+D) Not Equal. (W=T, X=F, Y=T, Z=F)\newline\newline
+
+E) \textbf{Claim: } $\neg$((W$\wedge$$\neg$X)$\rightarrow$($\neg$Y$\lor$Z)) $\equiv$ (Y$\wedge$$\neg$Z)$\wedge$(W$\wedge$$\neg$X)\newline
+
+\textbf{\textit{Proof: }}\newline
+$\neg$((W$\wedge$$\neg$X)$\rightarrow$($\neg$Y$\lor$Z)) $\equiv$ $\neg$($\neg$(W$\wedge$$\neg$X)$\lor$($\neg$Y$\lor$Z)) (implication)\newline
+$\equiv$ $\neg$$\neg$(W$\wedge$$\neg$X)$\wedge$(Y$\wedge$$\neg$Z) (DeMorgan's)\newline
+$\equiv$ (W$\wedge$$\neg$X)$\wedge$(Y$\wedge$$\neg$Z) (Double negation)\newline
+$\equiv$ (Y$\wedge$$\neg$Z)$\wedge$(W$\wedge$$\neg$X) ($\wedge$-commutative)$\square$\newline\rule{10cm}{1pt}\newline
+
+F)They are equivalent (truth table's are same); however, I can't seem to prove it using proof? Silly error on my part? \newline \textbf{Claim: } P$\leftrightarrow$Q $\equiv$$\neg$(P$\oplus$Q)\newline
+
+\textbf{\textit{Proof: }}\newline
+P$\leftrightarrow$Q $\equiv$ (P$\wedge$Q)$\lor$($\neg$P$\wedge$$\neg$Q) (Bi-Implication)\newline
+$\equiv$ $\neg$(($\neg$P$\lor$$\neg$Q)$\wedge$(P$\lor$Q)) (DeMorgan's)\newline
+$\equiv$ $\neg$((P$\rightarrow$$\neg$Q))$\wedge$(P$\lor$Q)) (Implication)\newline
+$\equiv$ $\neg$((P$\rightarrow$$\neg$Q))$\wedge$($\neg$P$\rightarrow$Q)) (implication)\newline\newline
+
+$\neg$(P$\oplus$Q) $\equiv$ $\neg$((P$\wedge$$\neg$Q)$\lor$($\neg$P$\wedge$Q)) (Exclusive Disjunction)\newline
+$\equiv$ (($\neg$P$\lor$Q)$\wedge$(P$\lor$$\neg$Q)) (DeMorgan's) \newline
+$\equiv$ (P$\rightarrow$Q)$\wedge$(P$\lor$$\neg$Q) (implication)\newline
+$\equiv$ (P$\rightarrow$Q)$\wedge$($\neg$P$\rightarrow$Q)$\square$\newline\rule{10cm}{1pt}\newline
+
+
+\enddocument
+
+
+
+
+
+Letter) \textbf{Claim: } claimHere\newline
+
+\textbf{\textit{Proof: }}\newline
+
+
+
+
+
+
+
+

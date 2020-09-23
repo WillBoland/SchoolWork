@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\begin{document}
+\title{Homework 8}
+\author{Will Boland}
+\maketitle
+
+\textbf{Question 1}\newline
+$H$$\rightarrow$($T$$\wedge$$\neg$$R$)\newline\newline
+
+\textbf{Question 2}\newline
+A)	$\exists$($P$(x)$\wedge$$\neg$$E$(x))\newline
+B)	All positive numbers are even.\newline
+C)	(1,3,5,9)\newline\newline
+
+\textbf{Question 3}\newline
+A)	fml2 = A$\wedge$B, fml1 = A $\lor$ B\newline
+B)	\{2/3, 4/3, -2/3\} $\subseteq$ A$\setminus$$\mathbb{Z}$\newline
+C)	\{-2\} $\in$ $P$(B)\newline\newline
+
+\textbf{Question 4}\newline
+\textbf{Claim: } (R$\wedge$S)$\rightarrow$$\neg$Q, R$\rightarrow$S $\vdash$ (R$\wedge$P)$\rightarrow$$\neg$(P$\wedge$Q)\newline
+
+\textbf{\textit{Proof}}\newline
+Assume (R$\wedge$S)$\rightarrow$$\neg$Q and R$\rightarrow$S\newline
+|	Assume R$\wedge$P, and Q (to show a contradiction)\newline
+|	From R$\wedge$P, R and P. ($\wedge$-elimination)\newline
+|	From P and Q, P$\wedge$Q ($\wedge$-introduction)\newline
+|	Due to R$\rightarrow$S and R, S ($\rightarrow$-elimination)\newline
+|	From R and S, R$\wedge$S ($\wedge$-introduction)\newline
+|	Due to (R$\wedge$S)$\rightarrow$$\neg$Q and R$\wedge$S, $\neg$Q ($\rightarrow$-elimination)\newline
+Assuming R$\wedge$P and Q, we got both Q and $\neg$Q, as well as P$\wedge$Q, which contradict, so $\neg$(P$\wedge$Q); therefore (R$\wedge$P)$\rightarrow$$\neg$(P$\wedge$Q) (proof by contradiction/direct proof)$\square$\newline\newline
+
+\textbf{Question 5}\newline
+A)	False. (A=T, C=F, B=F, D=T)\newline\newline
+
+B)	\textbf{Claim: }(A$\wedge$B)$\rightarrow$(C$\lor$D) $\equiv$ (A$\rightarrow$C)$\lor$(B$\rightarrow$D)\newline
+
+\textbf{\textit{Proof}}\newline
+(A$\wedge$B)$\rightarrow$(C$\lor$D) $\equiv$ $\neg$(A$\wedge$B) $\lor$ (C$\lor$D) (Material implication)\newline
+$\equiv$ $\neg$A $\lor$ $\neg$B $\lor$ (C$\lor$D) (Demorgans)\newline
+$\equiv$ $\neg$A $\lor$ C $\lor$ $\neg$B$\lor$D ($\lor$ associative)\newline
+$\equiv$ (A$\rightarrow$C) $\lor$ ($\neg$B$\lor$D) (Implication)\newline
+$\equiv$ (A$\rightarrow$C) $\lor$ (B$\rightarrow$D) (Implication)$\square$\newline\newline
+
+\textbf{Question 6}\newline
+\textbf{Claim: } For all sets A, B, C, and D, if A$\cup$C$\subseteq$D, then A$\setminus$B$\subseteq$D$\setminus$B\newline
+\textbf{\textit{Proof: }}\newline
+Choose sets A, B, C, and D, and assume  A$\cup$C$\subseteq$D
+|	Choose $x$$\in$A$\setminus$B and A$\cup$C.\newline
+|	So $x$$\in$A and $x$$\notin$B.\newline
+|	From A$\cup$C, $x$$\in$A or $x$$\in$D\newline
+||		Case 1: Suppose $x$$\in$A\newline
+||		From this, we can directly prove $x$$\in$D$\cap$A\newline
+||		Case 2: Suppose $x$$\in$C\newline
+||		From this, we can directly prove $x$$\in$D$\cap$A\newline
+|		Either case, we proved  $x$$\in$D$\cap$A\newline
+Therefore A$\setminus$B$\subseteq$D$\setminus$B $\square$
+
+
+\end{document}

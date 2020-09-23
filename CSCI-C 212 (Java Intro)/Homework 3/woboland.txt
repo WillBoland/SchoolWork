@@ -1,0 +1,51 @@
+Homework 3 (Grade.java) grading report
+Rubric: https://www.cs.indiana.edu/classes/c212-dgerman/fall2018/hw03.html
+Empty is good - only deductions are written down.
+
+Test cases (14 cases + 11 for boundaries)
+25 total cases * 3 pts each = 75 points total
+
+Note that I accepted 'invalid input' instead of having separate cases for
+'input too big' and 'input too small'. This may or may not happen in the future.
+
+Note: I reviewed the file as it had been originally submitted. Changes
+today other than adding the main method were not taken into account.
+
+>4: A+ or input too big   : -3 returns "A"
+(3.85, 4   ) should be A  :
+(3.5 , 3.85) should be A- : -3 lower bound in program was >= 3.45 for A-
+(3.15, 3.5 ) should be B+ : -3 upper bound in program for B+ was 3.45
+(2.85, 3.15) should be B  :
+(2.5 , 2.85) should be B- : -3 same as A-
+(2.15, 2.5 ) should be C+ :
+(1.85, 2.15) should be C  :
+(1.5 , 1.85) should be C- : -3 "
+(1.15, 1.5 ) should be D+ :
+(0.85, 1.15) should be D  :
+(0.35, 0.85) should be D- : -3 program had D- as >= 0.65
+[0   , 0.35) should be F  :
+<0: input too small       : -3 returns "F"
+
+3.85 (A ):
+3.5  (A-): -3
+3.15 (B+):
+2.85 (B ):
+2.5  (B-): -3
+2.15 (C+):
+1.85 (C ):
+1.5  (C-): -3
+1.15 (D+):
+0.85 (D ):
+0.35 (D-): -3
+
+================================================================================
+
+Deductions on structure points (25 points total):
+Main method is present but should ask user for their GPA and print their grade.
+I've put a 64 into the gradebook for now. I'll forward it to Prof. German soon
+   to figure out what the final grade should be.
+
+================================================================================
+
+Final deductions: -11*3 = -33
+Final grade: 67

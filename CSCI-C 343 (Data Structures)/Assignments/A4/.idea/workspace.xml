@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cf579413-79a1-4db7-940c-0bb8b27fc696" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashTable.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1XRS6npLpxlpWYK5nQesNIgqB2X" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="JUnit.HashFunctionTest">
+    <configuration name="All in A4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="A4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashFunctionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="A4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HashFunctionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashTableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="A4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HashTableTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashTableTest.fig518" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="A4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HashTableTest" />
+      <option name="METHOD_NAME" value="fig518" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashTableTest.hashSeparateChaining" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="A4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HashTableTest" />
+      <option name="METHOD_NAME" value="hashSeparateChaining" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.HashFunctionTest" />
+        <item itemvalue="JUnit.HashTableTest" />
+        <item itemvalue="JUnit.HashTableTest.hashSeparateChaining" />
+        <item itemvalue="JUnit.All in A4" />
+        <item itemvalue="JUnit.HashTableTest.fig518" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cf579413-79a1-4db7-940c-0bb8b27fc696" name="Default Changelist" comment="" />
+      <created>1580952504744</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580952504744</updated>
+      <workItem from="1580952507768" duration="1322000" />
+      <workItem from="1581007243060" duration="1069000" />
+      <workItem from="1581084173628" duration="56000" />
+      <workItem from="1581087173675" duration="1937000" />
+      <workItem from="1581260733973" duration="497000" />
+      <workItem from="1581301530007" duration="11263000" />
+      <workItem from="1581350660130" duration="757000" />
+      <workItem from="1581362895034" duration="3290000" />
+      <workItem from="1581394269095" duration="3391000" />
+      <workItem from="1581397970196" duration="863000" />
+      <workItem from="1581427329417" duration="2206000" />
+      <workItem from="1581451854089" duration="941000" />
+      <workItem from="1581454575248" duration="2202000" />
+      <workItem from="1581458998598" duration="433000" />
+      <workItem from="1581460397542" duration="559000" />
+      <workItem from="1581463426194" duration="3079000" />
+      <workItem from="1581532478472" duration="1761000" />
+      <workItem from="1581561361979" duration="74000" />
+      <workItem from="1581562779728" duration="997000" />
+      <workItem from="1581610652783" duration="5000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="746" y="248" key="#com.intellij.ide.util.MemberChooser" timestamp="1581309742883">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="653" y="241" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1581087489229" />
+    <state x="746" y="248" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1581309742883" />
+    <state x="689" y="421" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581007251987">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="689" y="421" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1581007251987" />
+    <state width="912" height="293" key="GridCell.Tab.0.bottom" timestamp="1581534242864">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1638" height="293" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1581455430160" />
+    <state width="912" height="293" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1581534242864" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1581089210626" />
+    <state width="1878" height="303" key="GridCell.Tab.0.bottom/0.23.1920.977@0.23.1920.977" timestamp="1581398473990" />
+    <state width="912" height="293" key="GridCell.Tab.0.center" timestamp="1581534242863">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1638" height="293" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1581455430158" />
+    <state width="912" height="293" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1581534242863" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1581089210625" />
+    <state width="1878" height="303" key="GridCell.Tab.0.center/0.23.1920.977@0.23.1920.977" timestamp="1581398473989" />
+    <state width="912" height="293" key="GridCell.Tab.0.left" timestamp="1581534242862">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1638" height="293" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1581455430157" />
+    <state width="912" height="293" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1581534242862" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1581089210623" />
+    <state width="1878" height="303" key="GridCell.Tab.0.left/0.23.1920.977@0.23.1920.977" timestamp="1581398473988" />
+    <state width="912" height="293" key="GridCell.Tab.0.right" timestamp="1581534242863">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1638" height="293" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1581455430159" />
+    <state width="912" height="293" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1581534242863" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1581089210625" />
+    <state width="1878" height="303" key="GridCell.Tab.0.right/0.23.1920.977@0.23.1920.977" timestamp="1581398473989" />
+    <state x="142" y="255" width="670" height="675" key="run.anything.popup" timestamp="1581304906792">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="142" y="255" width="670" height="675" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1581304906792" />
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1581305903384">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1581305903384" />
+  </component>
+</project>

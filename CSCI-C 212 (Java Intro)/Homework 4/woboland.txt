@@ -1,0 +1,132 @@
+Homework 4 grading report
+Graded at commit: a64a1e64
+
+14 points per problem * 7 problems = 98 points total
+Since points are deducted for incorrects (vs added for corrects), the maximum
+	score is still 100 points.
+
+A: E6.6   B: P6.2   C: P6.4
+D: P6.5   E: P6.6   F: P6.9
+G: P6.10
+
+
+==========   A   ==========
+2 points each
+All values read from one line: -2 reads one value from each line
+Average printed              :
+Smallest + largest printed   :
+Range printed                :
+Handles negative values      :
+Handles no input             :
+Class DataSet with add(double), and getAverage/Smallest/Largest/Range:
+===========================
+A: -2
+===========================
+
+
+==========   B   ==========
+2 points each
+Set of doubles read from input: -2
+Number of values counted      :
+Average calculated correctly  :
+SD calculated correctly       : -2
+Handles negative values       :
+Handles no input              :
+Class DataSet with add(double), getAverage(), and getStandardDeviation():
+===========================
+B: -4
+===========================
+
+
+==========   C   ==========
+1.4 points each
+=== Prints correct prime factorization for ===
+	Negative values: -1.4 gives output instead of error or nothing
+	0              :
+	1              :
+	2              : -0.7 prints '1 2' instead of just 2
+	7              : -0.7 see above
+	150            : -1.4
+=== Class FactorGenerator ===
+	public FactorGenerator(int):
+	nextFactor()               :
+	hasMoreFactors()           :
+Has separate class FactorPrinter with main():
+===========================
+C: -4.2
+===========================
+
+
+==========   D   ==========
+1.4 points each
+=== Correctly prints all primes up to ===
+	Negative values:
+	0              :
+	1              :
+	2              :
+	3              :
+	7              :
+	20             :
+=== Class PrimeGenerator ===
+	nextPrime:
+	isPrime  :
+Has separate class PrimePrinter with main():
+===========================
+D:
+===========================
+
+
+==========   E   ==========
+1.4 points each
+Randomly generates initial pile size in [10, 100] or (10, 100):
+Correctly records number of marbles in pile:
+Correctly keeps track of player turns      :
+Randomly generates who goes first          :
+Randomly generates computer strategy       :
+Deals with human inputs <1 or >floor(n/2)  :
+Stupid mode - removes random in [1, floor(n/2)] marbles:
+=== Smart mode ===
+	Pile size == 2^n - 1 --> make stupid move:
+	Otherwise, make pile size 2^n - 1        :
+	Smart mode works when pile size == 1     :
+===========================
+E:
+===========================
+
+
+==========   F   ==========
+3.5 points each
+Lower point of needle generated in [0, 2) or [0, 2] :
+Angle A generated in [0, 180] or [1, 180)*          :
+Correctly calculates if top of needle is >= 2       :
+Counts tries/hits for 10,000 tries and prints result:
+===========================
+F:
+===========================
+
+
+==========   G   ==========
+2.8 points each
+Each game simulated 1e6 times, print out $$$ P/L:
+=== Game 1 - at least one 6 appears in four rolls ===
+	Single die rolled four times          :
+	Presence of 6 always counted correctly:
+=== Game 2 - at least one double-six when rolling two die 24 times ===
+	Two die rolled simultaneously and independently each turn:
+	Presence of double-6 always checked correctly            :
+===========================
+G:
+===========================
+
+
+===========================
+2+4+4.2 = 10.2
+Total: 89.8
+
+If you have any questions, my office hours are 4:15-5:45 @ Luddy 2010.
+Or, email me at sraizada@iu.edu if it's something simple.
+
+========   NOTES   ========
+C: The while loop and println should be in FactorPrinter, not FactorGenerator
+D: See above
+D: Should print primes up to but excluding the given number; no points deducted.

@@ -1,0 +1,208 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+\title{Homework 2}
+\author{Will Boland}
+\maketitle
+
+\textbf{Question 1}\newline
+A) A $\rightarrow$ $\neg$B is satisfiable when (A=True, B = False)\newline
+B) A $\rightarrow$ $\neg$ is satisfiable when (A=False) because then it is if false then true\newline
+C) (A $\wedge$ $\neg$A) $\lor$ (B $\wedge$ $\neg$B) is not satisfiable because all truth assignments are false. Essentially, it is the same as False $\lor$ False.\newline
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c| } 
+ \hline
+ A & B & $\neg$A & $\neg$B & (A $\wedge$ $\neg$A) $\lor$ (B $\wedge$ $\neg$B) \\ 
+\hline
+ T & T & F & F & F\\ 
+ T & F & F & T & F\\ 
+ F & T & T & F & F\\
+ F & F & T & T & F\\
+ \hline
+\end{tabular}
+\end{center}
+
+D) This is satisfiable if both A and B are true, because then it turns into False iff False which is True.\newline
+E) This is satisfiable when (A=False, B=True, C=True).\newline
+F) This is satisfiable when (A=False). We don't need to know about B, C, or D because whenever A is false it will be satisfiable. This is because this could be re-written as $\neg$A $\lor$ E, which demonstrates no matter the value for E, if A is false then the statement is satisfiable.\newline
+\newline
+\textbf{Question 2}\newline
+A) Not a tautology when (A=False, B=True)\newline
+B) Is a contignecy. (A=False, B=True) is False yet (A=False, B=False) is true.\newline
+C) It is a tautology because the only way for this proposition to be false would be to have the first full ()'s to be True and last set to be false, which is unattainable. The only possible way to attempt to achieve this would be to set (A=true,B=false,C=false), which still returns True. \newline
+D) It is satisfiable with all given inputs for A, B, C. EX: (A=true,b=true,c=true). \newline
+E) It is not a contradiciton because (A=true,B=true) makes the statement satisfiable.
+F) It is not a contingency because all statements for A and B are satisfiable. (A=True, B=true)(A=True, B=false)(A=false,B=true)(A=false,B=false)\newline
+G)Is not a contradiciton. (A= True, B= true) satisfies the proposition.\newline
+H) Is not a tautology because it is satisfied when (A=true, B=true) and is not satisfied when (A=false,B=true). \newline
+\newline
+\textbf{Question 3}\newline
+A) Is consistent. (A=True, B=False)\newline
+B) Not Consistent (see table below)\newline
+\begin{center}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+ Q & P & $\neg$Q & P $\rightarrow$ Q \\ 
+\hline
+ T & T & F & T\\
+ T & F & F & T\\
+ F & T & T & F\\
+ F & F & T & T\\
+ \hline
+\end{tabular}
+\end{center}
+
+C) It is consistent (G=True, F=False, E=False)\newline
+\newline
+\textbf{Question 4}\newline
+A) They are logically equivalent. View table below.\newline
+\begin{center}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+ P & Q & (P $\leftrightarrow$ $\neg$Q) & (P $\wedge$ $\neg$Q) $\lor$ ($\neg$P $\wedge$ Q)\\
+\hline
+T & T & F & F\\
+T & F & T & T\\
+F & T & T & T\\
+F & F & F & F\\
+\hline
+\end{tabular}
+\end{center}
+
+B) Not equivalent. (A=True, B=false) See truth table below.\newline
+\begin{center}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+ A & B & A $\rightarrow$ B & $\neg$B $\rightarrow$ A\\
+\hline
+T & T & T & T\\
+T & F & F & T\\
+F & T & T & T\\
+F & F & T & F\\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Question 5}\newline
+A) A $\rightarrow$ B is not equivalent to its converse, B $rightarrow$ A. This is shown when (A=true, B=false).\newline
+B)  A $\rightarrow$ B is logically equivalent to its contrapositive, $\neg$B $\rightarrow$ $\neg$A. Shown below is the table for the proof.\newline
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c| }
+\hline
+A & B & A $\rightarrow$ B & $\neg$B $\rightarrow$ $\neg$A\\
+\hline
+T & T & T & T\\
+T & F & F & F\\
+F & T & T & T\\
+F & F & T & T\\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Question 6}\newline
+A) is not valid due to (A = false, B = false) \newline
+\begin{center}
+\begin{tabular}{ |c|c||c|c||c| }
+\hline
+A & B & $\neg$(A $\wedge$ B) & $\neg$A & $\neg$(B $\rightarrow$ A)\\
+\hline
+T & T & F & F & F\\
+T & F & T & F & F\\
+F & T & T & T & T\\
+F & F & T & T & F\\
+\hline
+\end{tabular}
+\end{center}
+
+B) is valid\newline
+
+\begin{center}
+\begin{tabular}{ |c|c||c|c||c| }
+\hline
+Y & X & Y$\rightarrow$X & X$\rightarrow$Y & $\neg$Y$\lor$X\\
+\hline
+T & T & T & T & T\\
+T & F & F & T & F\\
+F & T & T & F & T\\
+F & F & T & T & T\\
+\hline
+\end{tabular}
+\end{center}
+
+C) Valid \newline
+
+\begin{center}
+\begin{tabular}{ |c|c||c|c||c| }
+\hline
+P & Q & P$\leftrightarrow$Q & $\neg$Q$\wedge$P & Q $\wedge$ $\neg$P\\
+\hline
+T & T & T & F & F\\
+T & F & F & T & F\\
+F & T & F & F & T\\
+F & F & T & F & F\\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Question 7}\newline
+A) B $\leftrightarrow$ A\newline
+B) Does not exist because a tautology is a proposition that is always true while a contingency is a proposition that is satisfied by at least one and not satisfied by at least one.\newline
+C) \{ P $\wedge$ $\neg$Q, $\neg$Q $\wedge$ P \} \newline
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c| }
+\hline
+P & Q & P $\wedge$ $\neg$Q & $\neg$Q $\wedge$ P \\
+\hline
+T & T & F & F\\
+T & F & T & T\\
+F & T & F & F\\
+F & F & F & F\\
+\hline
+\end{tabular}
+\end{center}
+
+D) \{ $\neg$B $\wedge$ A, $\neg$B $\leftrightarrow$ $\neg$A \} \newline
+E) This is not possible because a contradiction is a propositional formula where no truth assignment satisfies it, while a consistent set of formulas is a grouping of formulas that share at least one satisfiable truth assignment.\newline
+F) \{ A $\wedge$ B, P $\rightarrow$ (Q $\rightarrow$ P) \} \newline
+G) \newline $\neg$B $\rightarrow$ A\newline A \newline \rule{40pt}{2pt} \newline $\neg$B \newline
+H) "p = X $\wedge$ X and q = Y $\wedge$ Y" \newline
+I) "p = X $\lor$ $\neg$Y and q = X"\newline
+Proof:\newline
+\begin{center}
+\begin{tabular}{ |c|c||c|c| }
+\hline
+X & Y & X $\lor$ $\neg$Y & X\\
+\hline
+T & T & T & T\\
+T & F & T & T\\
+F & T & F & F\\
+F & F & T & F\\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Question 8}\newline
+A) Every tautology is satisfiable because, by definition, it must be satisfied by every truth assignment. \newline
+B) No, not every satisfiable formula is also a tautology. For example: P $\oplus$ Q is satisfiable but not a tautology, it is a contingency.\newline
+C) Yes, every contingency is required to be satisfiable, because by definition, a contingency is a proposition that has at least one satisfiable claim and one non-satisfiable claim. \newline
+
+\textbf{Question 9} \newline
+I think that the argument is valid. The only way for us to check validity would be to have all premises be true, which then we can see if the conclusion is true. To determine if it is valid, our goal should be to have all premises be True, that way we can check validity. The only way to get the first premise to be true is to set A and B to true. Now, we move on to the second premise: we know A is true, and we MUST set C to true as well otherwise the second premise is false, which will no longer be able to check validity. So now we have A, B, and C set to true, which fullfills the first two premises as true. Now, we look at the third: C is true and (D $\wedge$ E) must be true, other wise the third premise is not true. So A, B, C, D, and E are now all set to true which fulfills all three premises. Now we can look at the conclusion: D $\wedge$ B. Well, we already set B and D to true so this conclusion is true, therefore proving that the argument is valid. We already discussed how we determined that the only arrangement to get the three premises true is to have all variables be True. \newline\newline
+\textbf{Question 10: Bonus}\newline
+I believe that option \textbf{A} would have the bigger truth table because it has five atomic propositions, which grows to 5 columns on the truth table. Now, we can add 4 more columns, one for each broken down part of the overall formula.
+
+\end{document}
+
+Biconditional
+T
+F
+F
+T
+
+Conditional
+T
+F
+T
+T

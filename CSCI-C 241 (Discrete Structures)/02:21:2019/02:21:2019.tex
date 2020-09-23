@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\begin{document}
+\title{Notes}
+\author{Will Boland}
+\maketitle
+
+The order of the quantifier words ("All", "there is", ...) and negation words must be the same as the order of the quantifier symbols and the negation symbol.\newline\newline
+
+$\exists$$x$$\forall$y(S(x)$\wedge$P(x,y))\newline
+$\equiv$ $\exists$x(S(x)$\wedge$$\forall$yP(x, y)\newline
+There exists a solid shape that points to all shapes.\newline\newline
+
+$\forall$x$\exists$y$ \neg$P(x, y) $\equiv$ $\forall$x$\neg$$\forall$yP(x, y) $\neg$$\exists$x$\forall$yP(x, y)\newline
+No shape points to every shape.
+For all shapes there exists a shape that doesn't point to all shapes.\newline
+All shapes do not point to all shapes.\newline
+There does not exist a shape that points to all shapes.\newline
+Every shape has a shape that it doesn't point to.\newline\newline
+
+$\forall$$\neg$ transtales to "no \_ does \_", NOT TO "every \_ does not \_"\newline
+$\neg$$\exists$ translates as "there does not exist" or "not any" or "no". DO NOT USE "not...some"\newline\newline
+
+$\exists$x$\forall$y(C(y)$\rightarrow$$\neg$P(x, y))\newline
+Some shape...every circle...not\newline
+There is a shape such that no circle is pointed to by it.\newline
+There is a shape that points to no circle.\newline
+There is a shape that does not point to any circle.\newline\newline
+
+$\exists$(C(x) $\wedge$ $\forall$((S(y)$\rightarrow$P(x, y)))\newline
+Some circle points to all of the solid shapes.\newline\newline
+
+$\neg$$\forall$x$\exists$y(C(x)$\rightarrow$P(x, y)) $\equiv$ $\exists$x(C(x)$\wedge$$\forall$y$\neg$P(x, y))\newline
+
+
+
+
+\enddocument

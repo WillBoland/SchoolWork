@@ -1,0 +1,18 @@
+Homework 7 grading report
+Graded at commit: f3e632aa
+
+Total score: 98
+
+a) Separated engine and game logic (30):
+b) Good looking snake              (10):
+c) Snake moves                     (10):
+d) Snake turns                     (10):
+e) Food is present                 (10): -2
+f) Snake eats food and grows      (5+5):
+g) Snake hits walls or itself   (10+10):
+
+If you have any questions, my office hours are MW 4:15-5:45 @ Luddy 2010.
+Or, email me at sraizada@iu.edu if it's something simple.
+
+========   NOTES   ========
+Food sometimes stops spawning after a while...

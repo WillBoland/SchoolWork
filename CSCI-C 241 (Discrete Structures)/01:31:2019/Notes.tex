@@ -1,0 +1,90 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\begin{document}
+\title{Notes}
+\author{Will Boland}
+\maketitle
+
+Commutative Laws\newline
+p$\wedge$q $\equiv$ q$\wedge$p ($\wedge$-Commutative)\newline
+p$\lor$q $\equiv$ q$\lor$p ($\lor$-Commutative)\newline\newline
+
+Association Laws\newline
+p$\wedge$(q$\wedge$r) $\equiv$ (p$\wedge$q)$\wedge$r\newline
+p$\lor$(q$\lor$r) $\equiv$ (p$\lor$q)$\lor$r\newline\newline
+
+DeMorgan's Laws\newline
+$\neg$(p$\wedge$q) $\equiv$ $\neg$p$\lor$$\neg$q\newline
+$\neg$(p$\lor$q) $\equiv$ $\neg$p$\wedge$$\neg$q\newline\newline
+
+Distributive Laws\newline
+p$\wedge$(q$\lor$r) $\equiv$ (p$\wedge$q)$\lor$(p$\wedge$r)\newline
+p$\lor$(q$\wedge$r) $\equiv$ (p$\lor$q)$\wedge$(p$\lor$r)\newline\newline
+
+Double Negation\newline
+$\neg$$\neg$p $\equiv$ p \newline\newline
+
+Idempotence Laws\newline
+p$\wedge$p $\equiv$ p\newline
+p$\lor$p $\equiv$ p\newline\newline
+
+Absorption\newline
+p$\wedge$(q$\lor$p) $\equiv$ p\newline\newline
+
+Implication or Material Implication\newline
+p$\rightarrow$q $\equiv$ $\neg$p$\lor$q\newline\newline
+
+Bi-Implication\newline
+p$\leftrightarrow$q $\equiv$ (p$\wedge$q)$\lor$($\neg$p$\wedge$$\neg$q)\newline\newline
+
+Exclusive Disjunction\newline
+p$\oplus$q $\equiv$ (p$\wedge$$\neg$q)$\lor$($\neg$p$\wedge$q)\newline
+
+Equality is \underline{transitive} meaning that if x = y and y = z, then z = y.\newline
+Because + is transitive, these chain proofs make sense.\newline\newline
+
+\textbf{Claim: } (A$\wedge$B)$\lor$(C$\wedge$D) $\equiv$ (D$\wedge$C)$\lor$(B$\wedge$A)\newline
+
+\textbf{\textit{Proof: }}\newline
+(A$\wedge$B)$\lor$(C$\wedge$D) $\equiv$ (C$\wedge$D)$\lor$(A$\wedge$B) ($\lor$-Commutative)\newline
+$\equiv$ (D$\wedge$C)$\lor$(A$\wedge$B) ($\wedge$-Commutative)\newline
+$\equiv$ (D$\wedge$C)$\lor$(B$\wedge$A) ($\wedge$-Commutative)$\square$$\newline$$\newline$
+
+
+\textbf{Claim: } X$\rightarrow$Y $\equiv$ $\neg$Y $\rightarrow$$\neg$X\newline
+
+\textbf{\textit{Proof: }}\newline
+X$\rightarrow$Y $\equiv$ $\neg$X$\lor$Y (Material implication)\newline
+	$\equiv$ Y$\lor$$\neg$X ($\lor$-Comm.)\newline
+
+$\neg$Y$\rightarrow$$\neg$X $\equiv$ $\neg$$\neg$Y$\lor$$\neg$X (Mat. Imp)\newline
+	$\equiv$ Y$\lor$$\neg$X (double negation) $\square$\newline\newline
+
+
+\textbf{DO NOT DO THIS:}\newline
+Pf: \newline
+X$\rightarrow$Y $\equiv$ $\neg$Y$\rightarrow$$\neg$X\newline
+$\neg$X$\lor$Y $\equiv$ $\neg$$\neg$Y$\lor$$\neg$X\newline
+$\neg$X$\lor$Y $\equiv$ Y$\lor$$\neg$X\newline
+Y$\lor$$\neg$X $\equiv$ Y$\lor$$\neg$X$\square$\newline
+\textbf{DO NOT START A PROOF BY STATING THAT YOUR CLAIM IS TRUE}\newline\newline\newline
+
+
+\textbf{Claim: }(A$\rightarrow$B)$\rightarrow$C $\equiv$ A$\rightarrow$(B$\rightarrow$C)\newline
+
+\textbf{\textit{Proof: }}\newline
+(A$\rightarrow$B)$\rightarrow$C $\equiv$ $\neg$(A$\rightarrow$B)$\lor$C (imp.)\newline
+	$\equiv$ $\neg$($\neg$A$\lor$B) (imp.)$\lor$C\newline
+	$\equiv$ ($\neg$$\neg$A$\wedge$$\neg$B)$\lor$C (demorgan's)\newline
+	$\equiv$ (A$\wedge$$\neg$B)$\lor$C (double neg)\newline
+
+A$\rightarrow$(B$\rightarrow$C) $\equiv$ $\neg$A $\lor$ (B$\rightarrow$C) (imp.)\newline
+	$\equiv$ $\neg$A$\lor$($\neg$B$\lor$C) (imp.)\newline
+	$\equiv$ ($\neg$A$\lor$$\neg$B)$\lor$C (Assoc.)\newline
+Not equivalent! (A=F, B=T , C=F)
+
+
+
+
+\end{document}

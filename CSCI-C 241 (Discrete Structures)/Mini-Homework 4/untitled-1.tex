@@ -1,0 +1,18 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\begin{document}
+\title{Mini-Homework 4}
+\author{Will Boland}
+\maketitle
+
+\textbf{Claim: } P$\wedge$Q $\vdash$ $\neg$(P$\rightarrow$$\neg$Q) is valid. \newline\newline
+
+\textbf{\textit{Proof: }}\newline
+Let P$\wedge$Q be true.\newline
+Since P$\wedge$Q, P and Q ($\wedge$-elimination)\newline
+|	Assume P$\rightarrow$$\neg$Q is true. (Will show a contradiction)\newline
+|	Since P$\rightarrow$$\neg$Q and P, $\neg$Q ($\rightarrow$-elimination)\newline
+Assuming P$\rightarrow$$\neg$Q we proved $\neg$Q, and we proved Q, which contradict, and therefore $\neg$(P$\rightarrow$$\neg$Q) (Conrad.) $\square$\newline
+
+\end{document}

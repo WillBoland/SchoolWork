@@ -1,0 +1,16 @@
+Homework 11 grading report
+Graded at commit: 
+
+As always, I grade based off of Professor German's instructions. For hw 11:
+50% for find-kth-in-bst; 50% for shortest path
+Full credit given as long as the solution works
+
+
+Final grade: 100
+
+Deductions/notes:
+
+
+
+If you have any questions, my office hours are MW 4:15-5:45 @ Luddy 2010.
+Or, email me at sraizada@iu.edu if it's something simple.

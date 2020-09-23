@@ -1,0 +1,39 @@
+This will be 1.a: Psuedocode portion.
+
+
+Include all necessary header files
+
+main {
+  CONSTANT max number of people = 149
+  CONSTANT ending condition = 2
+  INT number of consecutive groups cant enter = 0
+  INT number of people currently in room = 5 (due to guards)
+  
+  while(consecutiveGroups < endingCondition) {
+    print question about number in group departing/entering
+    number in group = scanned number from user
+    
+    if (group is entering) {
+      if(room is full) {
+        print that room is full and no entry allowed until people leave
+        consecutiveGroups += 1
+      } else {
+        add all (or portion that can fit) into the room
+        consecutiveGroups = 0
+        print that %d of %d of the group entered the room
+      }
+    }
+
+
+    if (group is leaving) {
+      if (group leaving exceeds current in room - 5) {
+        print that group size exceeds possible to leave
+      } else {
+        currentlyInRoom -= group amount that is leaving
+      }
+    }
+
+    print the total number of people in room VS the maximum allowed
+      
+  }
+}

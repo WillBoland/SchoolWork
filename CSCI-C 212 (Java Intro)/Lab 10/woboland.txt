@@ -1,0 +1,41 @@
+Lab 10 grading report
+Graded at commit: bf211342
+
+As always, I grade based off of Professor German's instructions. For lab 10:
+"For each problem look at what's missing, estimate how much it would take to
+   fix it, take it out of 100 and then take the average [of both problems]."
+
+================================================================================
+R15.18: ∪ and ∩ of two sets using `add` and `contains` and an Iterator
+--------------------------------------------------------------------------------
+
+================================================================================
+R15.19: ∪ and ∩ of two Sets using Set interface methods, but without Iterator
+--------------------------------------------------------------------------------
+
+█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+█ Score for problem 1: 100 █
+█ Score for problem 2: 100 █
+█ Final grade for hw9: 100 █
+█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
+
+If you have any questions, my office hours are MW 4:15-5:45 @ Luddy 2010.
+Or, email me at sraizada@iu.edu if it's something simple.
+
+========   NOTES   ========
+Good tests.
+
+Tests inspire confidence in your code.
+I noticed you had tests; I read tests; the tests seemed thorough enough.
+I spent about 5 seconds total looking at your actual code, because the tests
+  prove that the code is correct. That means I didn't examine your code
+  carefully and find errors to nitpick on, because the tests make me believe
+  that there aren't any.
+
+At the same time, it's important to make sure the tests are thorough - how can
+  they verify that your program works if they don't test all the cases your
+  program will encounter? Your tests should have checked that the program dealt
+  with duplicates in the inputs.
+
+If you don't believe that tests are worth the time it takes to write them, C343
+  will change your mind :)

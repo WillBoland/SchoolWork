@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\begin{document}
+\title{Mini-Homework 3}
+\author{Will Boland}
+\maketitle
+
+\textbf{Claim: This is valid}\newline
+$\neg$$\neg$A $\wedge$ $\neg$B, A $\rightarrow$ C $\vdash$ C $\wedge$ $\neg$B\newline\newline
+
+\textbf{\textit{Proof}}\newline
+Assume $\neg$$\neg$A $\wedge$ $\neg$B and A $\rightarrow$ C.\newline
+Since $\neg$$\neg$A $\wedge$ $\neg$ B,we know $\neg$$\neg$A and $\neg$B ($\wedge$-elimination)\newline
+From $\neg$$\neg$A, we get A (Double negation)\newline
+Applying A $\rightarrow$ C to A gives us C (Application, or $\rightarrow$-elim)\newline
+Because C and $\neg$B, C $\wedge$ $\neg$B. ($\wedge$-introduction)$\square$
+
+\end{document}

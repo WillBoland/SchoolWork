@@ -1,0 +1,34 @@
+Homework 9 grading report
+Graded at commit: 
+
+As always, I grade based off of Professor German's instructions. For hw9:
+"For each problem look at what's missing, estimate how much it would take to
+   fix it, take it out of 100 and then take the average [of both problems]."
+
+================================================================================
+E15.8: Use a stack to reverse sentence words. Fix capitalization and period.
+--------------------------------------------------------------------------------
+-4 does not capitalize word at beginning of new sentence
+
+================================================================================
+P15.7: Take 'normal' notation input and print as RPN
+--------------------------------------------------------------------------------
+-12 doesn't handle parentheses
+(1+2)-3  >  1 2 + 3 -
+1+(2-3)  >  1 2 3 - +
+
+█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+█ Score for problem 1: 096 █
+█ Score for problem 2: 100 █
+█ Final grade for hw9: 098 █
+█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
+
+If you have any questions, my office hours are MW 4:15-5:45 @ Luddy 2010.
+Or, email me at sraizada@iu.edu if it's something simple.
+
+========   NOTES   ========
+
+Problem 1 - "pie" and "bye" should be capitalized below:
+
+Enter sentences to be reversed: Hi I like pie. Hi bye.
+pie like i hi. bye hi.

@@ -1,0 +1,82 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{pgf, tikz}
+\usetikzlibrary{arrows, automata}
+\begin{document}
+\title{Notes}
+\author{Will Boland}
+\maketitle
+
+12 $\in$ X\newline
+15 $\in$ X\newline\newline
+Addition and subtraction same as homework\newline\newline
+\textbf{Claim:} Every member of x is div. by 3.\newline
+This is a universal claim about the members of X, so we use the structure of the definition of X for our induction proof.\newline\newline
+
+Base Case:\newline
+... prove 3 $\mid$ 12\newline
+... prove 3 $\mid$ 15\newline\newline
+
+Ind Step:\newline
+Assume x, y $\in$ X and and 3 $\div$ x and 3 $\div$ y\newline
+..prove 3 $\div$ x+y\newline
+Ind Step:\newline
+Assume 3$\div$x and 3$\div$y for some natural number $\in$ X\newline
+... prove 3 $\div$ x-y\newline\newline
+ 
+\textbf{claim:} for any natural number n, 3n$\in$x\newline
+This is a universal  claim about all of the natural numbers, so we use the definition of the natural numbers for our induction proof.\newline
+Base Case:\newline
+... prove 3*0 $\in$ X\newline\newline
+
+Ind Step:\newline
+Assume 3k $\in$X for some natural number k\newline
+... prove 3(k+1)$\in$X\newline\newline\newline
+
+
+\textbf{Quiz this week is a "review" quiz. Thursday lecture is a review lecture. Might post a bonus assignment but not for points. Test is tuesday morning at 10 or something.}\newline\newline
+
+Define F on the set of intergers by F = \{(n, m) $\mid$ $2n+3m$ is divisible by 5\}\newline
+F(5, 5) because $2*5 + 3*5 = 10+15=25$ and 5$\mid$25\newline
+F(-5, 10) because $2(-5)+3(10)=-10+30=20$ and 5$\mid$20\newline
+F(1, 6) beause $2+18=20$ and 5$\mid$20\newline
+$\neg$F(1, 2) because $2*1+3*2=2+6=8$ and 5 $\neg$$\mid$ 8 (not divisible)\newline\newline
+
+\underline{Is F reflexive?}\newline
+A relation R on A is reflexive iff for every a $\in$ A, R(a, a)\newline
+If you have an integer a, does F(a, a) have to be true?\newline
+Is $2a + 3a$ always/sometimes/never divisible by 5?\newline
+Yes, $2a+3a=5a$ is always divisible by 5.\newline\newline\newline
+
+
+\textbf{Claim:}\newline
+F is transitive.\newline
+NOTE: the following will be an incorrect proof.\newline
+Proof:\newline
+Choose a, b, c that are integers and assume F(a. b) and F(b, c)\newline
+So $2a+3b$ is divisible by 5 and $2b+2c$ is divisible by 5.\newline
+$2a+3b=2*n$ for some integer n\newline
+$2b+3c=5k$ for some integer k\newline
+NOTE: the following is purposely bad\newline
+$2b = 5k-3c$\newline
+$b = (5k-3c)/2$\newline
+$4a+15k-9c$ = 10n\newline
+$4a-9c=10n-15k$\newline
+$4a-9c=5(2n-3k)$\newline
+$2(2a)-3(3c)=5(2n-3k)$\newline
+NOTE: Do not just conclude this because we did not get our goal of 2a+3c = 5n\newline
+Since 5, 2, n, 3, and k are integers\newline
+Therefore $2(2n)-3(3c)$is div by 5...? not what we wanted to prove.\newline
+
+
+
+
+
+
+
+
+
+
+
+\enddocument

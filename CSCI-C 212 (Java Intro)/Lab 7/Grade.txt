@@ -1,0 +1,5 @@
+TOTAL AVERAGE: 87.66666666 repeating
+
+Problem One: 95
+Problem two: 94
+Problem three: 74

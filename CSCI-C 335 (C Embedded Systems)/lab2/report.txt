@@ -1,0 +1,20 @@
+Will Boland	woboland	No Partners in this lab
+
+Results:
+I accomplished everything assigned. 
+At first, my makefile did not seem to work. I forgot to put in a (.
+What also didn't work was type casting inside of dump.c. 
+I forgot to typecast it into a pointer.
+Overall, everything worked well.
+
+Difficulties:
+The spacing during the dump. 
+I realized that it would not line up exactly if I used the format I did to print the top.
+So, I customized each spacing to better match what the top printed. 
+Overall, it wasn't complex.
+
+What I Learned:
+I learned certain shortcuts you can take while making a Makefile.
+I also learned the usefullness of macros.
+I also learned some formatting tricks; however, I knew most of them already.
+Overall, it was helpful refresher.

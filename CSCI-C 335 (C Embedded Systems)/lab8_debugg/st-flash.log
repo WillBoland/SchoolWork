@@ -1,0 +1,11 @@
+st-flash 1.6.0-31-gf5d0454
+2020-03-31T12:00:18 WARN usb.c: Stlink usb device found, but unable to claim (probably already in use?)
+[!] send_recv send request failed: LIBUSB_ERROR_NOT_FOUND
+[!] send_recv STLINK_GET_CURRENT_MODE
+[!] send_recv send request failed: LIBUSB_ERROR_NOT_FOUND
+[!] send_recv STLINK_GET_CURRENT_MODE
+[!] send_recv send request failed: LIBUSB_ERROR_NOT_FOUND
+[!] send_recv STLINK_DEBUG_ENTER
+Failed to enter SWD mode
+[!] send_recv send request failed: LIBUSB_ERROR_NOT_FOUND
+[!] send_recv STLINK_JTAG_WRITEDEBUG_32BIT

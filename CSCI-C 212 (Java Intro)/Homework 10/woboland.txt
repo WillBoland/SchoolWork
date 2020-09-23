@@ -1,0 +1,28 @@
+Homework 10 grading report
+Graded at commit: 
+
+As always, I grade based off of Professor German's instructions. For hw 10:
+33% for each part of the problem:
+1) P16.9  - make LispList interface + 2 implementations
+            methods empty(), head(), tail(), cons()
+              empty list: throw UnsupportedOperationException for head and tail
+            public static final LispList NIL = new EmptyList()
+2) P16.10 - method length()
+3) P16.12 - method contains(Object obj)
+              "returns true if the list contains an element that *equals* obj"
+
+Final grade: 100
+
+Deductions/notes:
+
+
+
+If you have any questions, my office hours are MW 4:15-5:45 @ Luddy 2010.
+Or, email me at sraizada@iu.edu if it's something simple.
+
+========   NOTES   ========
+contains() should check for null variable before calling .equals(), otherwise it
+  may throw a NullPointerException
+
+if (head == null) return o == null; // still return true if both are null
+return head.equals(o) || tail.contains(o);

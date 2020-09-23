@@ -1,0 +1,5 @@
+Will Boland	woboland	04/15/2020
+
+Difficulties: I did not realize we had to call SysTic_Handler() in our main function for the longest time. I also did not realize that if we did part 5, part 4 breaks.
+
+I learned about Interrupts and Interrupt Driven UART.

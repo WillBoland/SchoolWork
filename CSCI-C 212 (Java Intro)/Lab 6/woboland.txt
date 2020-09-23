@@ -1,0 +1,57 @@
+Lab 6 grading report
+Graded at commit: 1eb37c7c
+
+Four equally weighted parts:
+A) Final program works properly
+B) Implementation of java.util.Arrays.sort    (int[])
+C) Implementation of java.util.Arrays.toString(int[])
+D) Implementation of java.util.Arrays.copyOf  (int[], int)
+
+sort, toString, and copyOf are graded on conformance to Javadoc (linked to in
+	lab assignment page on course website).
+For B and D (sort and copyOf), the reference (java.util.Arrays) implementation
+	throws a NullPointerException if given a null array as its input. Ideally,
+	your program would also do this, but I did not take off points if it didn't.
+
+
+==========   A   ==========
+Program stores numbers until user enters "bye"  :
+Program handles "bye" as first input            : -0.5 see 2 lines down ↓
+Program prints array after every input          :
+Program prints sorted array after "bye"         : -1 prints garbage after Bye
+
+==========   B   ========== (sort)
+Handles arrays of length 0                      :
+Sorts array into ascending numerical order      :
+Sorts inplace instead of making new array       :
+Doesn't unsort already-sorted arrays            :
+
+==========   C   ========== (toString)
+Returns "null" on null input                    : NullPointerException
+Returns "[]" on empty input                     :
+Returns String of correct format ("[-1, 2, -3]"):
+Returned String does not contain a trailing ", ":
+
+==========   D   ========== (copyOf)
+Handles input arrays of length 0                :
+Returns copy of new length                      :
+Truncates to length if necessary                :
+Pads with zeroes if necessary                   :
+
+
+===========================
+A (out of 4): -1.5
+B (out of 4):
+C (out of 4): -1
+D (out of 4):
+Total = (A + B + C + D) / 16 = 14.5/16
+
+Total: 90.63
+
+If you have any questions, my office hours are 4:15-5:45 @ Luddy 2010.
+Or, email me at sraizada@iu.edu if it's something simple.
+
+========   NOTES   ========
+This may or may not apply to you:
+  sort() should sort the array inplace and *return nothing*.
+  public void sort(int[] a)

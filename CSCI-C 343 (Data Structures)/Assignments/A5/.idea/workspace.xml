@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="48b830e3-da6c-487a-bdee-c4691011c84f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1XlBDie5T6PlZ7ozALxZOrlN9mx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="JUnit.LineWrapTest.test111">
+    <configuration name="LineWrapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="A5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LineWrapTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LineWrapTest.bad2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="A5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LineWrapTest" />
+      <option name="METHOD_NAME" value="bad2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LineWrapTest.bad3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="A5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LineWrapTest" />
+      <option name="METHOD_NAME" value="bad3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LineWrapTest.bad4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="A5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LineWrapTest" />
+      <option name="METHOD_NAME" value="bad4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LineWrapTest.test111" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="A5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LineWrapTest" />
+      <option name="METHOD_NAME" value="test111" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LineWrapTest.test111" />
+        <item itemvalue="JUnit.LineWrapTest" />
+        <item itemvalue="JUnit.LineWrapTest.bad4" />
+        <item itemvalue="JUnit.LineWrapTest.bad3" />
+        <item itemvalue="JUnit.LineWrapTest.bad2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="48b830e3-da6c-487a-bdee-c4691011c84f" name="Default Changelist" comment="" />
+      <created>1581528605992</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581528605992</updated>
+      <workItem from="1581528609922" duration="1700000" />
+      <workItem from="1581610685201" duration="2107000" />
+      <workItem from="1581689364729" duration="8000" />
+      <workItem from="1581705406382" duration="2764000" />
+      <workItem from="1581708835429" duration="1006000" />
+      <workItem from="1581713363415" duration="4917000" />
+      <workItem from="1581722709866" duration="745000" />
+      <workItem from="1581885641615" duration="325000" />
+      <workItem from="1581886016438" duration="814000" />
+      <workItem from="1581900495161" duration="568000" />
+      <workItem from="1581980718046" duration="3465000" />
+      <workItem from="1582042195105" duration="490000" />
+      <workItem from="1582048388730" duration="431000" />
+      <workItem from="1582060484706" duration="5000000" />
+      <workItem from="1582066788067" duration="136000" />
+      <workItem from="1582075481638" duration="5037000" />
+      <workItem from="1582082058730" duration="1000" />
+      <workItem from="1582088600344" duration="1961000" />
+      <workItem from="1582129863510" duration="1111000" />
+      <workItem from="1582142617589" duration="2310000" />
+      <workItem from="1582159877511" duration="1169000" />
+      <workItem from="1582161470027" duration="5976000" />
+      <workItem from="1582168346004" duration="119000" />
+      <workItem from="1582168543313" duration="301000" />
+      <workItem from="1582169243511" duration="367000" />
+      <workItem from="1582170048983" duration="984000" />
+      <workItem from="1582172147149" duration="151000" />
+      <workItem from="1582214683068" duration="11000" />
+      <workItem from="1585018216950" duration="149000" />
+      <workItem from="1585434638513" duration="30000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="560" y="205" key="#Project_Structure" timestamp="1582062136092">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="560" y="205" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1582062136092" />
+    <state x="88" y="97" width="813" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1582162187030">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="88" y="97" width="813" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1582162187030" />
+    <state x="100" y="100" width="929" height="880" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1582160470530" />
+    <state x="689" y="432" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581610704776">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="689" y="432" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1581610704776" />
+    <state width="1638" height="249" key="GridCell.Tab.0.bottom" timestamp="1585018365598">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state width="1638" height="291" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1582172297612" />
+    <state width="1878" height="301" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1582161070754" />
+    <state width="1638" height="249" key="GridCell.Tab.0.bottom/0.23.1680.944@0.23.1680.944" timestamp="1585018365598" />
+    <state width="912" height="302" key="GridCell.Tab.0.bottom/0.23.1920.974@0.23.1920.974" timestamp="1582090511441" />
+    <state width="1638" height="249" key="GridCell.Tab.0.center" timestamp="1585018365597">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state width="1638" height="291" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1582172297610" />
+    <state width="1878" height="301" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1582161070753" />
+    <state width="1638" height="249" key="GridCell.Tab.0.center/0.23.1680.944@0.23.1680.944" timestamp="1585018365597" />
+    <state width="912" height="302" key="GridCell.Tab.0.center/0.23.1920.974@0.23.1920.974" timestamp="1582090511439" />
+    <state width="1638" height="249" key="GridCell.Tab.0.left" timestamp="1585018365597">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state width="1638" height="291" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1582172297609" />
+    <state width="1878" height="301" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1582161070753" />
+    <state width="1638" height="249" key="GridCell.Tab.0.left/0.23.1680.944@0.23.1680.944" timestamp="1585018365597" />
+    <state width="912" height="302" key="GridCell.Tab.0.left/0.23.1920.974@0.23.1920.974" timestamp="1582090511438" />
+    <state width="1638" height="249" key="GridCell.Tab.0.right" timestamp="1585018365598">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state width="1638" height="291" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1582172297611" />
+    <state width="1878" height="301" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1582161070754" />
+    <state width="1638" height="249" key="GridCell.Tab.0.right/0.23.1680.944@0.23.1680.944" timestamp="1585018365598" />
+    <state width="912" height="302" key="GridCell.Tab.0.right/0.23.1920.974@0.23.1920.974" timestamp="1582090511440" />
+    <state x="578" y="295" key="extract.method.dialog" timestamp="1582168610792">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="578" y="295" key="extract.method.dialog/0.0.1680.1050@0.0.1680.1050" timestamp="1582168610792" />
+    <state x="625" y="255" key="run.anything.popup" timestamp="1581714137243">
+      <screen x="0" y="23" width="1920" height="974" />
+    </state>
+    <state x="625" y="255" key="run.anything.popup/0.23.1920.974@0.23.1920.974" timestamp="1581714137243" />
+  </component>
+</project>

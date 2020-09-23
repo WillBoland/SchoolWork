@@ -1,0 +1,22 @@
+Will Boland	woboland
+
+1: The nunchuck is via I2C; does not need to initialize pins because of this.
+
+2: I2C Read passes in a register among other things; yet Nunchuck Read does not. This implies the nunchuck is using only what it requires once it starts communicating.
+
+3: 
+ax = Accel X-Axis
+ay = Accel Y-Axis
+az = Accel Z-Axis
+jx = Joystick X-Axis
+jy = Joystick Y-Axis
+c = C Button
+z = Z Button
+
+4:
+	2: Z is held down, c is not
+	1: Z is not, C is held down
+	0: Z and c are held down
+	3: z and C are NOT held down
+
+Difficulties: I only had the nunchuck for about an hour. This was because of a family emergency. This made it difficult to finish, as I only got the bare bone stuff down with it. Most of the code was written without testing (because I didnt have a nunchuck or the board).

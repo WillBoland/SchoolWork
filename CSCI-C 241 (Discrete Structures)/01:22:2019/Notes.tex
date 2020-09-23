@@ -1,0 +1,63 @@
+\documentclass{article}
+\begin{document}
+\title{Homework}
+\author{Will Boland}
+\maketitle
+
+A \textbf{direct proof } is a sequence of deductions starting by assuming the premises and eventually proving the conclusion.\newline\newline
+
+\textbf{Semi-formal proofs}\newline
+- Limited set of rules\newline
+- One rule per step\newline
+- Always say what formulas you are using\newline
+- Use english sentences\newline
+- clearly write down the assumptions\newline
+- cite the names of the logical rules \newline\newline
+
+\textbf{Claim: this is valid}\newline
+$\neg$$\neg$A\newline
+A$\rightarrow$(B$\wedge$C)\newline
+-------------------\newline
+A$\wedge$C\newline\newline
+
+This can also be read as $\neg$$\neg$A, A$\rightarrow$(B$\wedge$C) $\vdash$ A$\wedge$C\newline\newline
+
+The turnstile symbol $\vdash$ means there is a proof with assumptions p1,...pn, and conclusion c.\newline\newline
+
+\textbf{Pf:}\newline
+Assume $\neg$$\neg$A and A$\rightarrow$(B$\wedge$C) are true.\newline
+Since $\neg$$\neg$A is true, so is A. (Double Negation)\newline
+Because A$\rightarrow$(B$\wedge$C) and A, we know B$\wedge$C. (Appl.)\newline
+From B$\wedge$C, we can conclude C. ($\wedge$-Elim.)\newline
+A and C together imply A$\wedge$C. ($\wedge$-Elim.) End the proof with a box like a period.\newline\newline
+
+\textbf{Natural Deduction Rules}\newline
+All of the Natural Deduction rules are inference rules, meaning that they only work in one direction, and they only work aon entire formulas, not parts of forumulas.\newline\newline
+$\wedge$-Elimination or simplification. \newline
+(If you know that p$\wedge$q is true, then you can conclude p is true, or q is true, or both.) \newline
+p$\wedge$q $\vdash$ p\newline
+P$\wedge$q $\vdash$ q\newline\newline
+
+$\wedge$-Introduction or conjuction. \newline
+p,q $\vdash$ q$\wedge$p\newline\newline
+
+$\rightarrow$-Elimination or Applicaiton or Modus Ponanus. \newline
+p$\rightarrow$q by itself is useless. p$\rightarrow$q together with p, implies q.\newline
+p$\rightarrow$q, p$\vdash$q\newline
+This DOES NOT mean that you can conclude that B == (A$\wedge$B)$\rightarrow$C due to $\rightarrow$-Elimination!!!\newline\newline
+
+$\neg$-Elimination or Double Negation.\newline
+$\neg$$\neg$p $\vdash$ p\newline\newline
+
+Weakening or $\lor$-Introduction.\newline
+p$\vdash$p$\lor$q\newline
+p$\vdash$q$\lor$p\newline\newline
+
+\textbf{Claim: (A$\lor$B)$\rightarrow$C, A $\vdash$ C)}\newline
+\textbf{(Pf:)}\newline
+Assume (A$\lor$B)$\rightarrow$C and A. (Weak)\newline
+Apply (A$\lor$B)$\rightarrow$ C to A$\lor$ B to get C (Appl.)\newline\newline
+
+Since X, we can conclude $\neg$(Z$\rightarrow$$\neg$W)$\lor$X. (Weak). \newline\newline
+
+\end{document}

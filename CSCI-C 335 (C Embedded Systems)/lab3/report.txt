@@ -1,0 +1,30 @@
+1. What are specs of the board you are using (ex. Speed, RAM, Flash)?
+
+   Speed: 50MHz
+   RAM:	  40k X 8
+   Flash: 256 KB
+
+2. What does GPIO stand for?
+
+   General Purpose Input Output
+
+3. Is the provided delay function accurate? Why or why not?
+
+   It is fairly accurate; however, since it is in a for loop it is not exact.
+
+4. What are the Port and Pin Numbers of the two green LEDs?
+
+   PE15 and PE11
+
+5. What are the public attributes of the GPIO_InitTypeDef Struct?
+
+   uint32_t GPIO_Pin;              
+   GPIOMode_TypeDef GPIO_Mode;     
+   GPIOSpeed_TypeDef GPIO_Speed;
+   GPIOOType_TypeDef GPIO_OType;   
+   GPIOPuPd_TypeDef GPIO_PuPd;   
+
+
+Difficulties:
+	Not too many. Just when it got to the very end.
+	I learned a lot about how we can interact with the board.

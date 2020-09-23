@@ -1,0 +1,26 @@
+will boland	woboland	02/05/2020
+
+How many connections are required to communicate over UART?
+
+    2
+
+What is the purpose of "alternate functions" for GPIO pins?
+
+     to provide more functionality and so we don't end up with a lot of pins
+
+Define "baud rate" in your own words.
+
+       how many bits (per second) we can transfer
+
+Why do we need newlib_stubs? Specifically, is there a reason that printf() won't work on the board without it?
+
+    it does not depend on the operating system, unlike printf (after including stdio.h) which isnt always on what we are running on
+
+Give an example of a situation in which the Salae Logic Analyzer is the best debugging method and include a screen shot of the Logic application.
+
+     Included screenshot; it is helpful for when we can not print to screen. NOTE: setting to ASCII did not work
+
+What did I learn?
+
+     I learned about how to interact with the UART and a better understanding overall.
+     I had a problem not seeing my input, but then I switched the wires

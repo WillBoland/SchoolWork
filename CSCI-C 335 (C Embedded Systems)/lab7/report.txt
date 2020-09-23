@@ -1,0 +1,33 @@
+Will Boland	woboland	3/4/2020
+1) It has 14 pins.
+   1: Vdd_IO
+   2: SCL
+   3: SDA
+   4: INT2
+   5: INT1
+   6: C1
+   7: GND
+   8: Reserved
+   9: DRDY
+   10: Reserved
+   11: Reserved
+   12: SETP
+   13: SETC
+   14: Vdd
+  
+   The minimum amount of voltage is 2.16. The max is 3.6.
+   
+
+2) We write to the accelerometer and magnetometer before we read them because we need to initialize the values.
+   Given the way i2c protocal works, we need to write bytes before we can read so we have something to read initially.
+   The following lines write to the slave devices so we have an initial value to read from for the master device.
+
+3) It takes the given array pointer and writes in indices 0, 1, and 2 the corresponding accelerometer data.
+   For example, [0] = x; [1] = y; [2] = z
+   It does this by looping 3 times, and taking our buffer at a specific position and left shifting 8 bits.
+
+4) It might be necessary to tilt compensate the compass given how if I tilt the board, my roll and pitch affect the reading.
+   This is because of the way we calculate the current heading using pitch and roll as base points. If it is tilted, our base points are off.
+
+Difficulties/What did I learn:	 Overall this lab was fairly easy. I had issues finding a good range for my heading.
+		      		 I learned about i2c communication.

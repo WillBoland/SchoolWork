@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{tabto}
+\begin{document}
+\title{Notes}
+\author{Will Boland}
+\maketitle
+
+\textbf{Claim: }(A$\wedge$B)$\rightarrow$C, A $\vdash$ (B$\wedge$D)$\rightarrow$C is valid)\newline
+
+\textbf{\textit{Proof:}}\newline
+Suppose (A$\wedge$B)$\rightarrow$C and A.\newline
+|	Assume B$\wedge$D\newline
+|	From B$\wedge$D, we get B and D ($\wedge$-elim.)\newline
+|	A and B together imply A$\wedge$B ($\wedge$-intro)\newline
+|	We have (A$\wedge$B)$\rightarrow$C and A$\wedge$B, so C ($\rightarrow$-elim)\newline
+Assuming B$\wedge$D, we proved C and therefore (B$\wedge$D)$\rightarrow$C. (direct proof or $\rightarrow$-introduction)\newline\newline
+
+\textbf{Claim: } (X$\lor$Y)$\wedge$$\neg$$\neg$Z $\vdash $X$\rightarrow$Z\newline
+
+\textbf{\textit{Proof:}}\newline
+Assume (X$\lor$Y)$\rightarrow$$\neg$$\neg$Z\newline
+|	Assume X$\lor$Y\newline
+|	Apply (X$\lor$Y)$\rightarrow$$\neg$$\neg$Z, to X$\lor$Y, resulting in $\neg$$\neg$Z. (Appl.)\newline
+|	$\neg$$\neg$Z leads to Z (double neg)\newline
+Under the assumption X$\lor$Y, we orived Z, and si (X$\lor$Y)$\rightarrow$Z (Dir. proof)\newline\newline
+
+\textbf{Do this instead of above!!!}:\newline\newline
+
+Assume (X$\lor$Y)$\rightarrow$$\neg$$\neg$Z\newline
+|	Assume X\newline
+|	From X, we know X$\lor$Y (weak.)\newline
+|	(X$\lor$Y)$\rightarrow$$\neg$$\neg$Z and X$\lor$Y imply $\neg$$\neg$Z (appl.)\newline
+|	Because $\neg$$\neg$Z, Z. (double neg)\newline
+We used X to prove Z, and hence X$\rightarrow$Z (Dir. pf)$\square$
+
+\textbf{When you pick your assumption, think about what you will do after you have finished the subproof, \underline{not} what you will do \underline{inside} the subproof.}\newline
+\end{document}

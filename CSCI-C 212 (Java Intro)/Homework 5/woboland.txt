@@ -1,0 +1,99 @@
+Homework 5 grading report
+Empty is good - only deductions are written down.
+
+Four parts, each 25% of final grade:
+A) R3.17, what percent of meaningful test cases were covered?
+B) R3.18, what percent of meaningful test cases were covered?
+C) E3.12, tests from part B pass with the student's implementation
+D) P3.7 , some basic scenarios should work
+
+
+Graded at commit: 9eca554
+
+
+==========   A   ==========
+Test class for Counter: void click(), int getValue(), void reset()
+Following functionality should be tested:
+
+6.25 click()      :
+6.25 getValue()   :
+6.25 reset()      :
+6.25 Initial count / constructor:
+
+Didn't need to implement the counter class for this.
+
+
+==========   B   ==========
+Test cases for Car class
+Tests present for:
+
+5 Add gas     :
+5 Drive car   :
+5 Add more gas:
+5 Drive again :
+5 Prints actual + expected gas:
+
+
+==========   C   ==========
+Class Car: graded on the same tests as part B passing.
+
+public Car(efficiency)
+vars: fuel=0   efficiency
+methods: addGas(amount)   getGasInTank()   drive(distance) always <= range
+
+5 Add gas     :
+5 Drive car   :
+5 Add more gas:
+5 Drive again :
+5 Constructor :
+
+
+==========   D   ==========
+Class Student: graded on the scenarios listed below working.
+Not writing many tests for this is OK for now; don't do it again in the future.
+
+public Student(name)
+vars: name     total score     quizzes taken
+methods: getName()    addQuiz(int score)    getTotalScore()    getAverageScore()
+
+5 getName()         :
+5 addQuiz()         :
+5 getTotalScore()   :
+5 getAverageScore() :
+5 getAverageScore() with 0 quizzes:
+
+
+===========================
+A:
+B:
+C:
+D:
+Total: 100
+
+If you have any questions, my office hours are 4:15-5:45 @ Luddy 2010.
+Or, email me at sraizada@iu.edu if it's something simple.
+
+========   NOTES   ========
+For counter try clicking multiple times, clicking after reset, etc. Your tests
+were OK but a bit short.
+
+I wrote this for another student, your code is OK but you may want to review it:
+
+Your code does not give a divide by zero error if calling getAverageScore with
+no quizzes added. This is because you cast total and num quizzes to double
+before dividing. If you were to leave them as ints, it would produce an
+ArithmeticException due to the divide by zero. But for floats/doubles, / by 0
+gives 'NaN' (not a number) as a result. You didn't write any tests for getting
+the average score with zero quizzes added, or handle it as a special case in
+getAverageScore, but the answer it gives (NaN) is correct, so I didn't take off
+any points :)
+
+Also, int divided by int or long divided by long will do integer division.
+But if you cast even one number to a float or double, e.g. float/int, then the
+int or long will be auto-casted to a float or double. Not quite sure how that
+interacts with divide by zero though. Same for other arithmetic, 1.0*2 is 2.0.
+So to make it even simpler, you can do (1.8 * int / int) to do floating-point
+division with ints; since mult/div are evaluated left to right, it will convert
+the first int to a double from the * and then you're trying to do double/int so
+the second int becomes a double. If you want a float instead of a double, it
+would be 1.0f * int / int, f indicates float.

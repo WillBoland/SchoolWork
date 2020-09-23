@@ -1,0 +1,23 @@
+Will Boland	woboland	Lab 5
+
+1.What does the CS pin do (the CS pin is called SS in the lab manual)?
+       It lets us talk with peripherals/connected devices
+
+2.Why  do  you  set  the  CS  high  at  the  end  of  the  pin  initializations?  What  other  function in f3d_gyro.c change CS from low to high or high to low?
+       Set it high to signify end of communication. f3d_gyro_write and f3d_gyro_read set it high to low/low to high
+
+3.How do you hook up multiple peripherals on one SPI bus?
+       Gyro was already connected. We could use additional wiring for other peripherals for one SPI bus
+
+
+4.The STM  has  an  Operating  Frequency  of  72  MHz.  When  initializing  SPI1,  what  do  you  set  the baud rate prescaler to? What is the resulting SPI clock frequency?
+      SPI_BaudRatePrescaler_8. So 8. The SPI clock frequency is 9MHz (72/8)
+
+
+5.Does  a  peripheral  (slave)  need  to  be  configured  with  the  transmission  speed  before  it  can  communicate with the microcontroller (master)? Why would you want to be able to do on-the-fly change in transmission speed?
+	Yes. We want to make on-the-fly changes so we can talk with other peripherals that need a certain speed
+
+
+Describe what you learned and any difficulties you had [5]
+	 I learned about SPI communication as well as different peripherals we hacve access to.
+	 I had difficulty getting the Logic Analyzer to work.

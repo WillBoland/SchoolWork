@@ -1,0 +1,22 @@
+Will Boland	woboland
+
+Results: 
+I accomplished the basic printing of "Hello, world" while waiting 3 seconds. 
+I then also worked on the icebreaker assignment. I wanted it to delete all user files in the home directory, but decided not too as that would cause a pain to test. 
+I then decided to simply delete all files in the current working directory, create 2 directories, and download EVERYTHING that I have access to in silo into that directory. 
+It does this while still printing "Hello, world" every 3 seconds (as well as printing some errors). What didn't work was making these errors silent... so I decided this is part of the chaos.
+Overall, I am fairly happy with the final result. Even though everything did not go as planned, it still causes an annoying experience for the user. It prints "Hello, world" every 3 seconds (as well as other things).
+
+
+What failed: 
+Making the errors silent for copying everything off of silo. 
+I tried redirecting the output of the errors to another file but it failed. I left it as is to contribute to the chaos. 
+Lastly, I decided to make it run in background so even when you stop running the .c file, it continues.
+
+What I learned: 
+I learned that while I could make a program that deletes all your files or changes the permission so everyone on silo has access, that testing it would be a pain. 
+I would have to contact the system admin to revert to a backup for me. I also learned that while I could copy everything, some items don't want to be deleted. 
+I would need to chmod them so I have access, if possible. To do this I ran "chmod -R 700 ." so it recursively allowed me access. Then I deleted it all so it didn't take up so much space.
+I also learned how to make processes go into the background, or start them in the background. I used this in the program.
+Even if you terminate the C application from running, it still downloads everything until you kill the process.
+Lastly, I learned that shoving an endless copy process into the background and forgetting to cancel is, well, awful yet beautiful.

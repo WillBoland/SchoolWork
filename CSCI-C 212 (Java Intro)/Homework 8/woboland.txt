@@ -1,0 +1,22 @@
+Homework 8 grading report
+Graded at commit: eef707c5
+
+Total score: 80
+
+As per Prof. German's rubric, 20 points are given for each function's code and
+  5 points are given for each function's tests.
+
+|GRADE   |  20  |  5 |
+|--------+------+----|
+|Merge   |  -0  | -5 |
+|Longest |  -0  | -5 |
+|Rest    |  -0  | -5 |
+|Sort    |  -0  | -5 |
+
+If you have any questions, my office hours are MW 4:15-5:45 @ Luddy 2010.
+Or, email me at sraizada@iu.edu if it's something simple.
+
+========   NOTES   ========
+No tests
+Good tests to write would include a 'normal' test; a test with an already-sorted
+  list; and tests with size 0, 1, and 2 lists.

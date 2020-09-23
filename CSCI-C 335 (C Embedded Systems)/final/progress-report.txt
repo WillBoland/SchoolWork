@@ -1,0 +1,12 @@
+PROGRESS REPORT 04/22/2020
+Will Boland	woboland
+
+Overview: Try to stop the LED on the correct LED (NORTH). Points and values change on direction heading. Different menu options with the keyboard that change difficulty, and bonus.
+
+I completed the following:
+  - User Button stops (and starts) the light. Timing is handled through SysTick, which also controls the state of the user button. This state gets passed to main.c, where the logic is handled.
+  - LED Lights: The lights rotate 1 by 1 around the board, until stopped with the user button.
+  - The keyboard controls the menu on the LCD screen. Menu is still in-progress.
+  - It tells you if you had a correct guess or an incorrect guess.
+  
+I still need to polish the menu, add different speed settings from the menu, have the way you are facing control different bonus options. I also need to have the LCD screen display the score. 

@@ -1,0 +1,23 @@
+Will Boland	woboland	04/28/2020
+
+--------------------
+Final Project Report
+--------------------
+The main concept of the game is to replicate a classic arcade game of trying to stop a rotating light around a circle closest to a certain point. In my game, I use the LED lights to replicate this, with the target goal being the north light. The core functionality is: stopping the lights rotating when you get it to the north (gets points for good guess/removes points otherwise), different bonuses depending your direction you are facing, user interaction over the keyboard to display different menus to change difficutly or a help screen.
+
+I added different speeds and boonus modes.
+
+-----
+TASKS
+-----
+1: Added rotating lights using SysTick in order to make the game. I ran into an issue where it would skip one of the LED's. I would make it so it would read better.
+2: Added user button stop the lights rotating to equal the guess. No issues. I would make it so there was more of a visual feedback.
+3: Added a score counter and main screen so they can see the score they have. I ran into an issue where f3d_string would cause the entire application to crash and burn. I would make it so writing to the string didn't cause it to fail for a little bit. (this was fixed).
+4: Added a menu screen when the user presses `1` so they can change settings. If the user pressed a different key it entered the menu. I fixed that. I would make it so I had better key declarations.
+5: Added a help screen within the menu screen when pressed '2' so they know how to play. Same as above.
+6: Added different difficutlies changing when in the menu screen and '5', '6', '7', or '8' are pressed so the game is fun. Same as above. I would also make it so there was a visual feedback on what difficulty you were on.
+7: Added a "Correct" or "Incorrect" Label so the user knows if they got it right or not. None. None.
+8: Added a "Bonus: 2x" label that changes depeding on the active bonus they have. None. None.
+9: Added bonus depending which direction they face to make the game fun. I forgot to initialize the i2c1 in f3d_i2c.c file. This caused many many issues. It worked as soon as I did that. I would make it so the mag was in a different file.
+
+

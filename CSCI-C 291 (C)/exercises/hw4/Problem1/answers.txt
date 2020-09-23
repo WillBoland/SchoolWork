@@ -1,0 +1,50 @@
+Will Boland
+11/17/2019
+
+1. Answer each of the following. Assume that unsigned integers are stored in 6 bytes and that the starting
+   address of the array is at location 0x100400 in memory.
+
+A)
+    unsigned short values[10] = {2, 4, 6, 8, 10, 12 ,14, 16, 18, 20};
+
+B)   
+    unsigned short* vPtr;
+
+C)
+    for(i = 0; i < values.SIZE; i++) {
+      printf("%d, ", values[i]);
+    }
+
+D)
+    vPtr = values;
+
+E)
+    for(i = 0; i < values.SIZE; i++) {
+      printf("%d, ", *(vPtr + i));
+    }
+
+F) 
+    for(i = 0; i < values.SIZE; i++) {
+      printf("%d, ", *(values + i));
+    }
+
+G)
+    for(i = 0; i < values.SIZE; i++) {
+      printf("%d, ", vPtr[i]);
+    }
+
+H)
+    values[4]; //array subscript for element 5
+    *(values + 4); //array name offset notation for element 5
+    vPtr[4]; //pointer subscript for element 5
+    *(vPtr + 4); //pointer offset notation for element 5
+
+I)
+    Address: 0x10041E
+    Value: 12
+
+J)
+    Assuming vPtr points to the adderess of values[6] and NOT the value held there:
+    
+    Address: 0x100412
+    Value: 8

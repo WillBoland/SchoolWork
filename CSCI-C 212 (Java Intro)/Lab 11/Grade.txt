@@ -1,0 +1,13 @@
+TOTAL GRADE: 97% or 290/300
+
+QUESTION 3: 100/100
+  - works, keeps and reports time simply.
+  
+QUESTION 4: 100/100
+  - Sorts humans using Comparable as expected, no issues found
+  
+Question 8: 90/100
+  - -5 points over all due to omission of a "(" and omission of a parameter for drawOval().
+  - -5 because the technically showed up, just with a radius of Math.random() * 100, which will always be 0
+  unless I added () around it. So while they technically were drawn and displayed on the screen, it would be impossible to see unless
+  that small change

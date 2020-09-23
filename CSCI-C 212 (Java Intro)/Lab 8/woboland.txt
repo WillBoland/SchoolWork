@@ -1,0 +1,16 @@
+Lab 8 grading report
+Graded at commit: 
+
+As always, I grade based off of Professor German's instructions. For lab 8:
+Each part is worth 20% of the grade. Parts:
+1) Open text file and read words one by one
+2) Make Map<Word, Count> and update it after reading each word
+3) Get an array of Comparables from the Map
+4) For definition of the Comparable type used above
+5) Sort array into descending order by # votes, and lexicographically for ties
+
+Final grade: 100
+
+
+If you have any questions, my office hours are MW 4:15-5:45 @ Luddy 2010.
+Or, email me at sraizada@iu.edu if it's something simple.

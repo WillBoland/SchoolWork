@@ -1,0 +1,14 @@
+will boland	woboland	Lab 6
+
+1: Printf debugging is alright for tracking down minor issues and double confirming values. The downside is that if you have something in a loop, it becomes very hard to track.
+
+2: It is called so the LCD knows what to set each pixel to.
+
+3: It sets Port B pin 12 Pin high. This is so theres nothing communicating during our initialization phase. This would cause issues.
+
+4: Every column can be represented by a byte. This allows the function to turn a pixel on or off based off of the contents of that byte. This leads to having a number of columns where it is set the corresponding bits in each to form a character.
+
+5: It is faster because it doesn't loop over every single pixel, but "pushes larger blocks of color to the screen."
+   Originally, it looped over every single pixel setting the value. Now we push large blocks. This more than doubled the speed.
+
+Difficulties:  Just making sure to not fry my board. I really liked this lab, it brought multiple pieces together.

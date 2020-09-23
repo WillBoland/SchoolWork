@@ -1,0 +1,108 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\begin{document}
+\title{Homework 3}
+\author{Will Boland}
+\maketitle
+
+\textbf{Question 1}\newline\newline
+A) \textbf{Claim: } (P $\wedge$ Q) $\rightarrow$ R, P $\wedge$ S, $\neg$$\neg$Q $\vdash$ R is valid.\newline
+
+\textbf{\textit{Proof: }}\newline
+Assume (P $\wedge$ Q) $\rightarrow$ R, P $\wedge$ S, and $\neg$$\neg$Q.\newline
+Because $\neg$$\neg$Q, we know Q. ($\neg$-Eliminiation)\newline
+Because P $\wedge$ S, we know P. ($\wedge$-Elimination)\newline
+From P and Q, we know P$\wedge$Q ($\wedge$-introduction)\newline
+Due to (P $\wedge$ Q) $\rightarrow$ R from P$\wedge$Q, we know R. ($\rightarrow$-Elimination)$\square$\newline\rule{10cm}{1pt}\newline
+
+
+
+B) \textbf{Claim: } X$\wedge$(X$\rightarrow$(Z$\wedge$Y)) $\vdash$ X$\wedge$Y is valid.\newline
+
+\textbf{\textit{Proof: }}\newline
+Assume X$\wedge$(X$\rightarrow$(Z$\wedge$Y)). \newline
+From X$\wedge$(X$\rightarrow$(Z$\wedge$Y)), we know X and (X$\rightarrow$(Z$\wedge$Y)). ($\wedge$-elimination)\newline
+Due to X$\rightarrow$(Z$\wedge$Y) from X, we know (Z$\wedge$Y) ($\rightarrow$-elimination)\newline
+From Z$\wedge$Y we know Y. ($\wedge$-elimination)\newline
+From X and Y, we know X$\wedge$Y ($\wedge$-introduction)$\square$\newline\rule{10cm}{1pt}\newline
+
+
+
+C) \textbf{ Claim: } A$\wedge$$\neg$$\neg$B $\vdash$ B$\lor$(A$\rightarrow$$\neg$C) is valid\newline
+
+\textbf{\textit{Proof: }}\newline
+Assume A$\wedge$$\neg$$\neg$B. \newline
+From A$\wedge$$\neg$$\neg$B, we know A and $\neg$$\neg$B. ($\wedge$-elimination)\newline
+From $\neg$$\neg$B, we know B. (Double negation)\newline
+From B, we know B$\lor$(A$\rightarrow$$\neg$C) ($\lor$-introduction)$\square$\newline\rule{10cm}{1pt}\newline
+
+
+
+D) \textbf{Claim: } (K$\lor$L)$\rightarrow$N, K$\wedge$M $\vdash$ N$\wedge$M is valid\newline
+
+\textbf{\textit{Proof: }}\newline
+Assume (K$\lor$L)$\rightarrow$N and K$\wedge$M. \newline
+From K$\wedge$M, we know both K and M. ($\wedge$-elimination)\newline
+From K, we know K$\lor$L. ($\lor$-introduction)\newline
+Due to (K$\lor$L)$\rightarrow$N from K$\lor$L from K, we know N. ($\rightarrow$-elimination)\newline
+From M and N, we know N$\wedge$M ($\wedge$-introduction)$\square$\newline\rule{10cm}{1pt}\newline
+
+
+
+E) \textbf{Claim: } (A$\wedge$B)$\rightarrow$C, B, A$\wedge$$\neg$D $\vdash$ C$\wedge$$\neg$D is valid\newline
+
+\textbf{\textit{Proof: }}\newline
+Assume (A$\wedge$B)$\rightarrow$C, B, and A$\wedge$$\neg$D\newline
+From A$\wedge$$\neg$D, we know both A and $\neg$D ($\wedge$-elimination)\newline
+From A and B, we know A$\wedge$B ($\wedge$-introduction)\newline
+Due to (A$\wedge$B)$\rightarrow$C from A$\wedge$B, we know C ($\rightarrow$-elimination)\newline
+From C and $\neg$D, we know C$\wedge$$\neg$D ($\wedge$-introduction)$\square$\newline\rule{10cm}{1pt}\newline
+
+
+
+F) \textbf{Claim: } (A$\wedge$B)$\rightarrow$C, B $\vdash$ (A$\wedge$$\neg$D)$\rightarrow$(C$\wedge$$\neg$D) is valid\newline
+
+\textbf{\textit{Proof: }}\newline
+Assume (A$\wedge$B)$\rightarrow$C and B . \newline
+|	Assume A$\wedge$$\neg$D\newline
+|	From A$\wedge$$\neg$D, we have both $\neg$D and A ($\wedge$-elimination)\newline
+|	From A and B, we get A$\wedge$B ($\wedge$-introduction)\newline
+|	Due to (A$\wedge$B)$\rightarrow$C from A$\wedge$B, we know C ($\rightarrow$-elimination)\newline
+|	From C and $\neg$D, we know C$\wedge$$\neg$D ($\wedge$-introduction)\newline
+Assuming A$\wedge$$\neg$D, we proved (C$\wedge$$\neg$D) and therefore (A$\wedge$$\neg$D)$\rightarrow$(C$\wedge$$\neg$D). (direct proof or $\rightarrow$-introduction)$\square$\newline\rule{10cm}{1pt}\newline
+
+
+
+G) \textbf{Claim: } Z$\rightarrow$$\neg$X, Z$\wedge$$\neg$$\neg$Y $\vdash$ $\neg$X$\lor$Y is valid\newline
+
+\textbf{\textit{Proof: }}\newline
+Assume Z$\rightarrow$$\neg$X and Z$\wedge$$\neg$$\neg$Y\newline
+From Z$\wedge$$\neg$$\neg$Y, we know Z and $\neg$$\neg$Y ($\wedge$-elimination)\newline
+From $\neg$$\neg$Y we get Y (double negation)\newline
+Due to Z$\rightarrow$$\neg$X from Z, we get $\neg$X ($\rightarrow$-elimination)\newline
+From $\neg$X or Y, we know $\neg$X$\lor$Y ($\lor$-introduction)$\square$\newline\rule{10cm}{1pt}\newline
+
+
+
+H) \textbf{Claim: } $\vdash$ ((Z$\rightarrow$$\neg$X)$\wedge$(Z$\wedge$$\neg$$\neg$Y))$\rightarrow$($\neg$X$\lor$Y) is valid\newline
+
+\textbf{\textit{Proof: }}\newline
+|	Assume ((Z$\rightarrow$$\neg$X)$\wedge$(Z$\wedge$$\neg$$\neg$Y))\newline
+|	From ((Z$\rightarrow$$\neg$X)$\wedge$(Z$\wedge$$\neg$$\neg$Y)), we know (Z$\rightarrow$$\neg$X) and (Z$\wedge$$\neg$$\neg$Y) ($\wedge$-elimination)\newline
+|	From (Z$\wedge$$\neg$$\neg$Y), we know Z and $\neg$$\neg$Y ($\wedge$-elimination)\newline
+|	From $\neg$$\neg$Y, we know Y ($\neg$-elimination)\newline
+|	Due to (Z$\rightarrow$$\neg$X) from Z, we know $\neg$X ($\rightarrow$-elimination)\newline
+|	From $\neg$X and Y, we know $\neg$X$\lor$Y ($\lor$-introduction)\newline
+Assuming ((Z$\rightarrow$$\neg$X)$\wedge$(Z$\wedge$$\neg$$\neg$Y)), we proved $\neg$X$\lor$Y; therefore, ((Z$\rightarrow$$\neg$X)$\wedge$(Z$\wedge$$\neg$$\neg$Y))$\rightarrow$($\neg$X$\lor$Y). (Direct proof)$\square$
+
+
+
+\end{document}
+
+
+
+
+Letter) \textbf{Claim: } claimHere is valid\newline
+
+\textbf{\textit{Proof: }}\newline

@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+
+"a \textbf{proposition} is a statement"\newline
+Conjuction ($\wedge$): And, but, plus, as well, too : TFFF\newline\newline
+Disjunction ($\lor$): or : TTTF\newline\newline
+Conditional implication ($\rightarrow$): if, in the case that, given that, provided that, so long as, when, where, whenever, should : TFTT\newline\newline
+"if": "We will contact you if there is an issue with the payment" is I$\rightarrow$P\newline\newline
+"only if": "We will contact you only if the case that there is an issue with the payment" is C$\rightarrow$I\newline\newline
+Biconditional Implication ($\leftrightarrow$): if and only if : TFFT\newline\newline
+"Sufficient": “Matching fingerprints are a sufficient condition to establish the presence of the suspect in the room.” is F$\rightarrow$R\newline\newline
+"Necessary": “Being plugged in is a necessary condition for the device to be on.” O$\rightarrow$P\newline\newline
+"Necessary and Sufficient": $\leftrightarrow$\newline\newline
+A formula of propositional logic is a \textbf{contradiction} if and onlyif no truth assignment satisfies it.\newline
+A formula of propositional logic is \textbf{satisfiable} if and only ifthere is at least one truth assignment that satisfies it.\newline
+A formula of propositional logic is a \textbf{tautology} if and only if it is satisfied by every truth assignment. To prove that a formula is a tautology using tables, you must give every row of the table.\newline
+A formula of propositional logic that has at least one satisfying assignment and at least one non-satisfying assignment is called a \textbf{contingency}. To prove that a formula is a contingency,  you  must  give two truth assignments: one satisfying, and one not satisfying. To prove that a formula is not a contingency using tables, you must give an entire table, showing either that every assignment satisfies the formula or no assignment does.\newline\newline
+
+A set of formulas is \textbf{consistent} if and only if there exists at least one truth assignment that satisfies all of the formulas in the set.
+An argument is \textbf{valid} if and only if every truth assignment that satisfies all the premises also satisfies the conclusion.\newline
+
+Commutative Laws\newline
+p$\wedge$q $\equiv$ q$\wedge$p ($\wedge$-Commutative)\newline
+p$\lor$q $\equiv$ q$\lor$p ($\lor$-Commutative)\newline
+
+Association Laws\newline
+p$\wedge$(q$\wedge$r) $\equiv$ (p$\wedge$q)$\wedge$r\newline
+p$\lor$(q$\lor$r) $\equiv$ (p$\lor$q)$\lor$r\newline
+
+DeMorgan's Laws\newline
+$\neg$(p$\wedge$q) $\equiv$ $\neg$p$\lor$$\neg$q\newline
+$\neg$(p$\lor$q) $\equiv$ $\neg$p$\wedge$$\neg$q\newline
+
+Distributive Laws\newline
+p$\wedge$(q$\lor$r) $\equiv$ (p$\wedge$q)$\lor$(p$\wedge$r)\newline
+p$\lor$(q$\wedge$r) $\equiv$ (p$\lor$q)$\wedge$(p$\lor$r)\newline
+
+Idempotence Laws\newline
+p$\wedge$p $\equiv$ p\newline
+p$\lor$p $\equiv$ p\newline
+
+Absorption\newline
+p$\wedge$(q$\lor$p) $\equiv$ p\newline
+
+Implication or Material Implication\newline
+p$\rightarrow$q $\equiv$ $\neg$p$\lor$q\newline
+
+Bi-Implication\newline
+p$\leftrightarrow$q $\equiv$ (p$\wedge$q)$\lor$($\neg$p$\wedge$$\neg$q)\newline
+
+Exclusive Disjunction\newline
+p$\oplus$q $\equiv$ (p$\wedge$$\neg$q)$\lor$($\neg$p$\wedge$q)\newline
+
+\underline{Setlist Notation}\newline
+A = \{0,1,2,3\}\newline
+
+\underline{Set builder notation}\newline
+S = \{$n^2$ $\mid$ n is an integer $\wedge$ n $\geq$ 20 $\wedge$ n $\leq$ 500\}\newline
+
+\textbf{\underline{Special Sets of Numbers}}\newline
+\underline{Natural Numbers}:	$\mathbb{N}$ = \{0,1,2,3,...\}\newline
+\underline{Integers}:	$\mathbb{Z}$ = \{...,-2,-1,0,1,2,...\}\newline
+\underline{Rational Numbers}:	$\mathbb{Q}$ = \{$\dfrac{p}{q}$ $\mid$ p $\in$ $\mathbb{Z}$ $\wedge$ q $\in$ $\mathbb{Z}$ $\wedge$ q $\neq$ 0\}\newline
+= any \# that can be written as a ratio/fraction/quotiant of integers\newline
+
+The universal set (or the universe) is the set of all the things we currently care about. We often use a cursive capital $\mathbb{U}$ for the universe.
+
+
+
+
+
+\end{document}

@@ -1,0 +1,146 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\addtolength{\oddsidemargin}{-.875in}
+	\addtolength{\evensidemargin}{-.875in}
+	\addtolength{\textwidth}{1.75in}
+
+	\addtolength{\topmargin}{-.875in}
+	\addtolength{\textheight}{1.75in}
+\usepackage{amssymb}
+\begin{document}
+
+
+
+\begin{tiny}
+"a \textbf{proposition} is a statement"\newline
+Conjuction ($\wedge$): And, but, plus, as well, too : TFFF\newline\newline
+Disjunction ($\lor$): or : TTTF\newline\newline
+Conditional implication ($\rightarrow$): if, in the case that, given that, provided that, so long as, when, where, whenever, should : TFTT\newline\newline
+"if": "We will contact you if there is an issue with the payment" is I$\rightarrow$P\newline\newline
+"only if": "We will contact you only if the case that there is an issue with the payment" is C$\rightarrow$I\newline\newline
+Biconditional Implication ($\leftrightarrow$): if and only if : TFFT\newline\newline
+"Sufficient": “Matching fingerprints are a sufficient condition to establish the presence of the suspect in the room.” is F$\rightarrow$R\newline\newline
+"Necessary": “Being plugged in is a necessary condition for the device to be on.” O$\rightarrow$P\newline\newline
+"Necessary and Sufficient": $\leftrightarrow$\newline\newline
+A formula of propositional logic is a \textbf{contradiction} if and onlyif no truth assignment satisfies it.\newline
+A formula of propositional logic is \textbf{satisfiable} if and only ifthere is at least one truth assignment that satisfies it.\newline
+A formula of propositional logic is a \textbf{tautology} if and only if it is satisfied by every truth assignment. To prove that a formula is a tautology using tables, you must give every row of the table.\newline
+A formula of propositional logic that has at least one satisfying assignment and at least one non-satisfying assignment is called a \textbf{contingency}. To prove that a formula is a contingency,  you  must  give two truth assignments: one satisfying, and one not satisfying. To prove that a formula is not a contingency using tables, you must give an entire table, showing either that every assignment satisfies the formula or no assignment does.\newline\newline
+
+A set of formulas is \textbf{consistent} if and only if there exists at least one truth assignment that satisfies all of the formulas in the set.
+An argument is \textbf{valid} if and only if every truth assignment that satisfies all the premises also satisfies the conclusion.\newline\newline
+Commutative Laws \quad \quad \quad \quad \quad \quad \quad \quad Association Laws \quad \quad \quad \quad \quad  DeMorgan's Laws\quad \quad \quad  Distributive Laws \quad \quad \quad Idempotence Laws \quad \quad \quad Absorption \newline
+p$\wedge$q $\equiv$ q$\wedge$p ($\wedge$-Commutative) \quad \quad \quad p$\wedge$(q$\wedge$r) $\equiv$ (p$\wedge$q)$\wedge$r  \quad \quad \quad  $\neg$(p$\wedge$q) $\equiv$ $\neg$p$\lor$$\neg$q \quad \quad \quad p$\wedge$(q$\lor$r) $\equiv$ (p$\wedge$q)$\lor$(p$\wedge$r) \quad \quad \quad p$\wedge$p $\equiv$ p \quad \quad \quad p$\wedge$(q$\lor$p) $\equiv$ p \newline
+p$\lor$q $\equiv$ q$\lor$p ($\lor$-Commutative) \quad \quad \quad  p$\lor$(q$\lor$r) $\equiv$ (p$\lor$q)$\lor$r  \quad \quad \quad $\neg$(p$\lor$q) $\equiv$ $\neg$p$\wedge$$\neg$q \quad \quad \quad  p$\lor$(q$\wedge$r) $\equiv$ (p$\lor$q)$\wedge$(p$\lor$r)\quad \quad \quad p$\lor$p $\equiv$ p \quad \quad \quad  \newline\newline
+Material Implication \quad \quad  Bi-Implication \quad \quad \quad \quad \quad \quad Exclusive Disjunction\newline
+p$\rightarrow$q $\equiv$ $\neg$p$\lor$q \quad \quad \quad \quad p$\leftrightarrow$q $\equiv$ (p$\wedge$q)$\lor$($\neg$p$\wedge$$\neg$q)  \quad \quad \quad  p$\oplus$q $\equiv$ (p$\wedge$$\neg$q)$\lor$($\neg$p$\wedge$q) \newline
+
+\underline{Setlist Notation}\newline
+A = \{0,1,2,3\}\newline
+
+\underline{Set builder notation}\newline
+S = \{$n^2$ $\mid$ n is an integer $\wedge$ n $\geq$ 20 $\wedge$ n $\leq$ 500\}\newline
+
+\textbf{\underline{Special Sets of Numbers}}\newline
+\underline{Natural Numbers}:	$\mathbb{N}$ = \{0,1,2,3,...\}\newline
+\underline{Integers}:	$\mathbb{Z}$ = \{...,-2,-1,0,1,2,...\}\newline
+\underline{Rational Numbers}:	$\mathbb{Q}$ = \{$\dfrac{p}{q}$ $\mid$ p $\in$ $\mathbb{Z}$ $\wedge$ q $\in$ $\mathbb{Z}$ $\wedge$ q $\neq$ 0\}\newline
+= any \# that can be written as a ratio/fraction/quotiant of integers\newline
+
+The universal set (or the universe) is the set of all the things we currently care about. We often use a cursive capital $\mathbb{U}$ for the universe.\newline\newline
+
+
+
+
+
+\textbf{Equivalence Laws for FOL}\newline
+$\neg$$\forall$xp(x) $\equiv$ $\exists$x$\neg$p(x) (Universal negation -- DeMorgan)\newline
+$\neg$$\exists$p(x) $\equiv$ $\forall$x$\neg$p(x) (Existential negation -- DeMorgan)\newline\newline
+\underline{Quantifier movement}\newline
+$\forall$y(p(x)$\rightarrow$r(x, y)) $\equiv$ p(x)$\rightarrow$$\forall$yr(x, y)\newline
+$\exists$y(p(x)$\rightarrow$r(x, y)) $\equiv$ p(x)$\rightarrow$$\exists$yr(x, y)\newline
+$\forall$y(p(x)$\wedge$r(x, y)) $\equiv$ p(x)$\wedge$$\forall$yr(x, y)\newline
+$\exists$y(p(x)$\wedge$r(x, y)) $\equiv$ p(x)$\wedge$$\exists$yr(x, y)\newline\newline
+\underline{Quantifier Independence}\newline
+$\forall$x$\forall$yp(x, y) $\equiv$ $\forall$y$\forall$xp(x, y)\newline
+$\exists$x$\exists$yp(x, y) $\equiv$ $\exists$y$\exists$xp(x, y)\newline\newline
+\underline{Distribution}\newline
+$\forall$x(p(x)$\wedge$q(x)) $\equiv$ $\forall$xp(x)$\wedge$$\forall$xq(x)\newline
+$\exists$x(p(x)$\lor$q(x)) $\equiv$ $\exists$xp(x)$\lor$$\exists$xq(x)\newline\newline
+\underline{Null Quantification}\newline
+$\forall$xp(y) $\equiv$ p(y) where x is not free in p(y)\newline
+$\exists$xp(y) $\equiv$ p(y) where x is not free in p(y)\newline\newline
+\textbf{Universal Proofs (for sets)}\newline
+\underline{Claim}: For all sets A, B, and C, A$\cap$B$\subseteq$B$\cup$C\newline
+\textit{Proof: } Choose sets A, B, and C.\newline
+|	Choose x $\in$ A$\cap$B\newline
+|	So x$\in$A and x$\in$B\newline
+|	Since x$\in$B, we know x$\in$B$\cup$C\newline
+Therefore A$\cap$B$\subseteq$B$\cup$C$\square$\newline\newline
+\underline{Claim}: For all sets A, B, and C, if A$\subseteq$B then C$\setminus$B$\subseteq$C$\setminus$A\newline
+\textit{Proof: } Choose sets A, B, and C, and assume A$\subseteq$B\newline
+|	Choose x$\in$C$\setminus$B\newline
+|	So x$\in$C and x$\notin$B\newline
+||		Suppose towards a contradiction taht x$\in$A\newline
+||		Then we can apply A$\subseteq$B to show that x$\in$B\newline
+|	But this contradicts our earlier deduction that x$\notin$B, so x must not be a member of A\newline
+|	This, together with x$\in$C allows us to conclude that x$\in$C$\setminus$A\newline
+Therefore C$\setminus$B$\subseteq$C$\setminus$A $\square$\newline\newline
+\underline{Claim}: For all sets A, B, and C, if A$\subseteq$C, then A$\cup$B$\subseteq$C$\cup$B\newline
+\textit{Proof: } Choose sets A, B, and C, and assume A$\subseteq$C\newline
+|	Choose x $\in$ A$\cup$B\newline
+|	So x$\in$A or x$\in$B\newline
+||		\textbf{Case 1:} Suppose x$\in$A\newline
+||		In this case, we can apply A$\subseteq$C to get x$\in$C\newline
+||		And weaken to get x$\in$C$\cup$B\newline
+||		\textbf{Case 2:} Suppose x$\in$B\newline
+||		From this x$\in$C$\cup$B\newline
+|	In either case, we've proven x$\in$C$\cup$B\newline
+Therefore A$\cup$B$\subseteq$C$\cup$B\newline\newline
+\textbf{Existential Claims}\newline
+Def: x is \textbf{odd} if there exists an integer n that ${x = 2n + 1}$\newline
+Def: x is \textbf{divisible by} y if there exists an integer n that ${x = n*y}$\newline
+Def: x is \textbf{rational} if there exists an integer p and q that ${x = p/q}$ and q$\neq$0\newline\newline
+\textbf{Claim: }10 times any interger is even\newline
+\underline{Proof:} Choose an integer n. | let m = 5n. since 5 and n are integers so is m | because 10n = 2*5n = 2m we know 10n is even | therefore 10 times any integer is even$\square$\newline\newline
+\textbf{Reflexive Proof}\newline
+\textbf{Claim: }E is reflexive (E = \{(n, m) $\mid$ n+m is even\}\newline
+\underline{Proof:} Choose an integer n.\newline
+${n+n = 2n}$\newline
+Since n is an integer, this means n + n is even, hence E(n, n)$\square$\newline\newline
+\textbf{Symmetric Proof}\newline
+\textbf{Claim: } E is symmetric (E = \{(n, m) $\mid$ n = m is even\}
+\underline{Proof:} Choose intefgers n and m and assume E(n, m)\newline
+So n - m is even | so there exists an integer k such that n - m = 2k |m - n = -(n - m) = -2k = 2 * (-k) | Since k is an int so is -k | therefore m - n is even so E(m, n)\newline\newline
+\textbf{Transitive Proof}\newline
+\textbf{Claim: }E is transitive (E = \{(n, m) $\mid$ n - m is even\}\newline
+\underline{Proof:} Choose integers x, y, and z and assume E(x, y) and E(y, z)\newline
+So l - m and m - n are both even\newline
+Thus there exist integers j and k such that l - m = 2j and m - n = 2k\newline
+(l-m)+(m - n) = 2j + 2k\newline
+l - n = 2(j+k)\newline
+Since j and k are integers, j + k is too\newline
+Therefore l - n is even, hence E(l, n)$\square$\newline\newline
+\textbf{Anti-symmetric Proof}\newline
+\textbf{Claim: } P is antisymmetric where p = s, t s is a prefix of t\newline
+\underline{Proof:} Choose strings s and t and assume P(s, t) and P(t, s) | s is prefix of t and t is prefix of s | exists strings u and v that t = s + u and s = t + v | thus t = (t + v) + u | v and u must be empty otherewise length longer than length of t | so t = s + u = s $\square$\newline\newline
+
+\includegraphics[width=55mm,scale=0.5]{/Users/will/Desktop/death1.png}
+\includegraphics[width=55mm,scale=0.5]{/Users/will/Desktop/death2.png}
+\includegraphics[width=55mm,scale=0.5]{/Users/will/Desktop/death3.png}\newline\newline
+\includegraphics[width=55mm,scale=0.5]{/Users/will/Desktop/death4.png}\newline\newline
+A = \{(x, y) $\mid$ ${3x=2y+1}$ and ${g(x) = 7x-2}$\newline
+\includegraphics[width=55mm,scale=0.5]{/Users/will/Desktop/death5.png}
+\includegraphics[width=55mm,scale=0.5]{/Users/will/Desktop/death6.png}
+
+
+
+
+
+\end{tiny}
+\end{document}

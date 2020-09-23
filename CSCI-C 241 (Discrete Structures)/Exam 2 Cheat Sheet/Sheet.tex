@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\begin{document}
+\textbf{Equivalence Laws for FOL}\newline
+$\neg$$\forall$xp(x) $\equiv$ $\exists$x$\neg$p(x) (Universal negation -- DeMorgan)\newline
+$\neg$$\exists$p(x) $\equiv$ $\forall$x$\neg$p(x) (Existential negation -- DeMorgan)\newline\newline
+\underline{Quantifier movement}\newline
+$\forall$y(p(x)$\rightarrow$r(x, y)) $\equiv$ p(x)$\rightarrow$$\forall$yr(x, y)\newline
+$\exists$y(p(x)$\rightarrow$r(x, y)) $\equiv$ p(x)$\rightarrow$$\exists$yr(x, y)\newline
+$\forall$y(p(x)$\wedge$r(x, y)) $\equiv$ p(x)$\wedge$$\forall$yr(x, y)\newline
+$\exists$y(p(x)$\wedge$r(x, y)) $\equiv$ p(x)$\wedge$$\exists$yr(x, y)\newline\newline
+\underline{Quantifier Independence}\newline
+$\forall$x$\forall$yp(x, y) $\equiv$ $\forall$y$\forall$xp(x, y)\newline
+$\exists$x$\exists$yp(x, y) $\equiv$ $\exists$y$\exists$xp(x, y)\newline\newline
+\underline{Distribution}\newline
+$\forall$x(p(x)$\wedge$q(x)) $\equiv$ $\forall$xp(x)$\wedge$$\forall$xq(x)\newline
+$\exists$x(p(x)$\lor$q(x)) $\equiv$ $\exists$xp(x)$\lor$$\exists$xq(x)\newline\newline
+\underline{Null Quantification}\newline
+$\forall$xp(y) $\equiv$ p(y) where x is not free in p(y)\newline
+$\exists$xp(y) $\equiv$ p(y) where x is not free in p(y)\newline\newline
+\textbf{Universal Proofs (for sets)}\newline
+\underline{Claim}: For all sets A, B, and C, A$\cap$B$\subseteq$B$\cup$C\newline
+\textit{Proof: } Choose sets A, B, and C.\newline
+|	Choose x $\in$ A$\cap$B\newline
+|	So x$\in$A and x$\in$B\newline
+|	Since x$\in$B, we know x$\in$B$\cup$C\newline
+Therefore A$\cap$B$\subseteq$B$\cup$C$\square$\newline\newline
+\underline{Claim}: For all sets A, B, and C, if A$\subseteq$B then C$\setminus$B$\subseteq$C$\setminus$A\newline
+\textit{Proof: } Choose sets A, B, and C, and assume A$\subseteq$B\newline
+|	Choose x$\in$C$\setminus$B\newline
+|	So x$\in$C and x$\notin$B\newline
+||		Suppose towards a contradiction taht x$\in$A\newline
+||		Then we can apply A$\subseteq$B to show that x$\in$B\newline
+|	But this contradicts our earlier deduction that x$\notin$B, so x must not be a member of A\newline
+|	This, together with x$\in$C allows us to conclude that x$\in$C$\setminus$A\newline
+Therefore C$\setminus$B$\subseteq$C$\setminus$A $\square$\newline\newline
+\underline{Claim}: For all sets A, B, and C, if A$\subseteq$C, then A$\cup$B$\subseteq$C$\cup$B\newline
+\textit{Proof: } Choose sets A, B, and C, and assume A$\subseteq$C\newline
+|	Choose x $\in$ A$\cup$B\newline
+|	So x$\in$A or x$\in$B\newline
+||		\textbf{Case 1:} Suppose x$\in$A\newline
+||		In this case, we can apply A$\subseteq$C to get x$\in$C\newline
+||		And weaken to get x$\in$C$\cup$B\newline
+||		\textbf{Case 2:} Suppose x$\in$B\newline
+||		From this x$\in$C$\cup$B\newline
+|	In either case, we've proven x$\in$C$\cup$B\newline
+Therefore A$\cup$B$\subseteq$C$\cup$B\newline\newline
+\textbf{Existential Claims}\newline
+Def: x is \textbf{odd} if there exists an integer n that ${x = 2n + 1}$\newline
+Def: x is \textbf{divisible by} y if there exists an integer n that ${x = n*y}$\newline
+Def: x is \textbf{rational} if there exists an integer p and q that ${x = p/q}$ and q$\neq$0\newline\newline
+\textbf{Claim: }10 times any interger is even\newline
+\underline{Proof:} Choose an integer n. | let m = 5n. since 5 and n are integers so is m | because 10n = 2*5n = 2m we know 10n is even | therefore 10 times any integer is even$\square$\newline\newline
+\textbf{Reflexive Proof}\newline
+\textbf{Claim: }E is reflexive (E = \{(n, m) $\mid$ n+m is even\}\newline
+\underline{Proof:} Choose an integer n.\newline
+${n+n = 2n}$\newline
+Since n is an integer, this means n + n is even, hence E(n, n)$\square$\newline\newline
+\textbf{Symmetric Proof}\newline
+\textbf{Claim: } E is symmetric (E = \{(n, m) $\mid$ n = m is even\}
+\underline{Proof:} Choose intefgers n and m and assume E(n, m)\newline
+So n - m is even | so there exists an integer k such that n - m = 2k |m - n = -(n - m) = -2k = 2 * (-k) | Since k is an int so is -k | therefore m - n is even so E(m, n)\newline\newline
+\textbf{Transitive Proof}\newline
+\textbf{Claim: }E is transitive (E = \{(n, m) $\mid$ n - m is even\}\newline
+\underline{Proof:} Choose integers x, y, and z and assume E(x, y) and E(y, z)\newline
+So l - m and m - n are both even\newline
+Thus there exist integers j and k such that l - m = 2j and m - n = 2k\newline
+(l-m)+(m - n) = 2j + 2k\newline
+l - n = 2(j+k)\newline
+Since j and k are integers, j + k is too\newline
+Therefore l - n is even, hence E(l, n)$\square$\newline\newline
+\textbf{Anti-symmetric Proof}\newline
+\textbf{Claim: } P is antisymmetric where p = s, t s is a prefix of t\newline
+\underline{Proof:} Choose strings s and t and assume P(s, t) and P(t, s) | s is prefix of t and t is prefix of s | exists strings u and v that t = s + u and s = t + v | thus t = (t + v) + u | v and u must be empty otherewise length longer than length of t | so t = s + u = s$\square$
+
+\enddocument
